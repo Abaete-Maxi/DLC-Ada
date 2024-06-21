@@ -26,7 +26,9 @@ The current implementation focuses on transforming valid Bitcoin addresses into 
 Key Features Implemented:
 ==================================================================
 Bitcoin Address Validation: Accepts and validates Bitcoin addresses as input.
+
 Data Transformation: Converts validated Bitcoin addresses into byte sequences, then into hexadecimal strings using Ada.
+
 Bech32 Encoding: Converts hexadecimal strings into Bech32 format using external Python and C scripts.
 
 Future Development
@@ -36,9 +38,11 @@ There are several planned enhancements and features to be implemented in future 
 Blockchain Integration:
 
 Real link to the Bitcoin blockchain for funds transfer and address validation.
+
 Oracle Integration:
 
 Integration with an Oracle to receive data from the NOSTR protocol, potentially leveraging AWS services for communication.
+
 Enhanced Validation and Security:
 
 Strengthen Bitcoin address validation and ensure robust security measures in data handling.

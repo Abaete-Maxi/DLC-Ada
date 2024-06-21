@@ -62,9 +62,11 @@ Ensure hashing.gpr is placed in the root directory of your project.
 
 Place all files from /src/ (including bech32.c, bech32.py, bech32_wrapper.py, main.adb, and setup.py) inside the /src/ directory of your project.
 
-run gprbuild -d -p<path/to/hashing.gpr>
+Open terminal and run:
+
+`gprbuild -d -p<path/to/hashing.gpr>`
 or
-gprbuild -d -p<path/to/hashing.gpr> -o <path/to/main.exe> ( to compile the executable into another directory )
+`gprbuild -d -p<path/to/hashing.gpr> -o <path/to/main.exe>` ( to compile the executable into another directory )
 
 Contributing
 ---------------------------------------------

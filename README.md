@@ -7,11 +7,11 @@ The compiled program (DLC.exe) is currently available for mock usage.
 Project Structure
 ===================================================================
 Root Directory:
-===================================================================
+-------------------------------------------------------------------
 hashing.gpr: Project file to manage dependencies and compilation.
 
 Source Directory (/src/):
-===================================================================
+-------------------------------------------------------------------
 bech32.c: C language implementation for Bech32 encoding. //
 
 bech32.py: Python script for Bech32 encoding. //

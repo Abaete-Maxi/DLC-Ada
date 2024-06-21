@@ -1,0 +1,19 @@
+project Hashing is
+
+   for Languages use ("Ada", "C");
+
+   for Source_Dirs use ("src");
+
+   for Object_Dir use "obj";
+   for Exec_Dir use "bin";
+
+      package Builder is
+        for Default_Switches ("Ada") use ("-g", "-gnat2022");
+        for Default_Switches ("C") use ("-g");
+     end Builder;
+
+   for Main use ("main.adb");
+
+   for Source_Files use ("main.adb", "bech32.c");
+
+end Hashing;

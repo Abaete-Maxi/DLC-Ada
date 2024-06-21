@@ -9,12 +9,18 @@ hashing.gpr: Project file to manage dependencies and compilation.
 
 Source Directory (/src/):
 ===================================================================
-bech32.c: C language implementation for Bech32 encoding.
-bech32.py: Python script for Bech32 encoding.
-bech32_wrapper.py: Python wrapper for interfacing Ada with bech32.py.
-main.adb: Main Ada program implementing the DLC functionality.
-setup.py: Python setup script for necessary environment configuration.
+bech32.c: C language implementation for Bech32 encoding. //
+
+bech32.py: Python script for Bech32 encoding. //
+
+bech32_wrapper.py: Python wrapper for interfacing Ada with bech32.py. //
+
+main.adb: Main Ada program implementing the DLC functionality. //
+
+setup.py: Python setup script for necessary environment configuration. //
+
 Functionality Implemented
+==================================================================
 The current implementation focuses on transforming valid Bitcoin addresses into byte sequences, then into hexadecimal format, and finally into Bech32 for output. External helpers in Python and C are utilized for these transformations.
 
 Key Features Implemented:

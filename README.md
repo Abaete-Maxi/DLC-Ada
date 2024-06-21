@@ -1,8 +1,11 @@
 Discreet Log Contract (DLC) Experiment in Ada
 ===================================================================
-This project explores the implementation of a Discreet Log Contract (DLC) using the Ada programming language. The compiled program (DLC.exe) is currently available for mock usage.
+This project explores the implementation of a Discreet Log Contract (DLC) using the Ada programming language.
+
+The compiled program (DLC.exe) is currently available for mock usage.
 
 Project Structure
+===================================================================
 Root Directory:
 ===================================================================
 hashing.gpr: Project file to manage dependencies and compilation.
@@ -52,11 +55,15 @@ Getting Started
 To compile and run the current mock version of the DLC experiment:
 
 Clone this repository to your local machine.
+
 Ensure hashing.gpr is placed in the root directory of your project.
+
 Place all files from /src/ (including bech32.c, bech32.py, bech32_wrapper.py, main.adb, and setup.py) inside the /src/ directory of your project.
+
 run gprbuild -d -p<path/to/hashing.gpr>
 or
 gprbuild -d -p<path/to/hashing.gpr> -o <path/to/main.exe> ( to compile the executable into another directory )
+
 Contributing
 Contributions to enhance and expand the functionality of this experiment are welcome. Please fork the repository, make your changes, and submit a pull request.
 
@@ -67,4 +74,5 @@ This project is licensed under the MIT License.
 Acknowledgments
 ===============================================
 The Ada programming language community for their support and resources.
+
 Contributors to Bitcoin-related libraries and tools used in this project.

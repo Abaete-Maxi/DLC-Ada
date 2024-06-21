@@ -24,7 +24,9 @@ setup.py: Python setup script for necessary environment configuration. //
 
 Functionality Implemented
 ==================================================================
-The current implementation focuses on transforming valid Bitcoin addresses into byte sequences, then into hexadecimal format, and finally into Bech32 for output. External helpers in Python and C are utilized for these transformations.
+The current implementation focuses on transforming valid Bitcoin addresses into byte sequences, then into hexadecimal format, and finally into Bech32 for output.
+
+External helpers in Python and C are utilized for these transformations.
 
 Key Features Implemented:
 ==================================================================
@@ -39,15 +41,15 @@ Future Development
 There are several planned enhancements and features to be implemented in future iterations of the project:
 
 Blockchain Integration:
-
+---------------------------------------------------------------------
 Real link to the Bitcoin blockchain for funds transfer and address validation.
 
 Oracle Integration:
-
+---------------------------------------------------------------------
 Integration with an Oracle to receive data from the NOSTR protocol, potentially leveraging AWS services for communication.
 
 Enhanced Validation and Security:
-
+---------------------------------------------------------------------
 Strengthen Bitcoin address validation and ensure robust security measures in data handling.
 
 Getting Started
@@ -65,6 +67,7 @@ or
 gprbuild -d -p<path/to/hashing.gpr> -o <path/to/main.exe> ( to compile the executable into another directory )
 
 Contributing
+---------------------------------------------
 Contributions to enhance and expand the functionality of this experiment are welcome. Please fork the repository, make your changes, and submit a pull request.
 
 License

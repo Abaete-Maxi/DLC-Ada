@@ -66,7 +66,7 @@ Open terminal and run:
 
 `gprbuild -d -p<path/to/hashing.gpr>`
 or
-`gprbuild -d -p<path/to/hashing.gpr> -o <path/to/main.exe>` ( to compile the executable into another directory )
+`gprbuild -d -P<path/to/hashing.gpr> -o <path/to/main.exe>` ( to compile the executable into another directory )
 
 Contributing
 ---------------------------------------------

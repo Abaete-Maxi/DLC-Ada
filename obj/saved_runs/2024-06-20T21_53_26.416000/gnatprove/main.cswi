@@ -1,0 +1,7 @@
+20240620201432
+-c
+-x
+ada
+-gnatA
+-gnatc
+-gnates=C:\Projects\hashingtest\obj\gnatprove\2d556bd8.tmp

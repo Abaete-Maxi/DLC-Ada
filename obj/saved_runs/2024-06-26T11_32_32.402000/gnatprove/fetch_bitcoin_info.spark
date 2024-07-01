@@ -1,0 +1,25 @@
+{
+  "spark": [
+    {
+      "name": "Fetch_Bitcoin_Info.Fetch_Bitcoin_Info",
+      "sloc": [
+        {
+          "file": "fetch_bitcoin_info.ads",
+          "line": 4
+        }
+      ],
+      "spark": "no"
+    }
+  ],
+  "flow": [
+  ],
+  "assumptions": [
+  ],
+  "timings": {
+    "globals (advanced)": 1.23446896672249E-01,
+    "flow analysis": 1.80400005774572E-04,
+    "marking": 2.11899998248555E-04,
+    "properties (advanced)": 4.32999986514915E-05,
+    "globals (basic)": 1.23791597783566E-01
+  }
+}

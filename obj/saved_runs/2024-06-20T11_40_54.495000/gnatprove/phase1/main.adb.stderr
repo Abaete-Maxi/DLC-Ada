@@ -1,0 +1,2 @@
+main.adb:66:21: error: expected type "Standard.Integer"
+main.adb:66:21: error: found type "Ada.Streams.Stream_Element_Offset"

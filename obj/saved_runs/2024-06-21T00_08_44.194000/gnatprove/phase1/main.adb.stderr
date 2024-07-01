@@ -1,0 +1,1 @@
+main.adb:173:61: error: context of aggregate must be a qualified expression

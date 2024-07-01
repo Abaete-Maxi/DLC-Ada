@@ -1,0 +1,60 @@
+[GENERATED OBJECT FILE]
+b__main.o
+[PROJECT FILES]
+C:\Projects\hashingtest\hashing.gpr
+20240629042306 67375e6a15b2429aaa0aeec58d6e3c7e
+C:\gnat\2021\share\gpr\aws.gpr
+20210520135556 123676dd7454f30e655a8fccc75e2cf5
+C:\gnat\2021\share\gpr\gnatcoll_gmp.gpr
+20210520133506 68a7ca149c3ccf427d757e841cda42b3
+C:\gnat\2021\share\gpr\gnatcoll.gpr
+20210520133234 13f65417ff68aadb0dc9d8981806bb62
+C:\gnat\2021\share\gpr\gpr.gpr
+20210520132824 bfeaa6ee83ab5037ceae82dde53121e1
+C:\gnat\2021\share\gpr\gnatcoll_iconv.gpr
+20210520133510 23b21bc149e10285ab7a3886a7de49a0
+C:\gnat\2021\share\gpr\langkit_support.gpr
+20210520133548 22d021ae75833107b1b7a8b08ae677b7
+C:\gnat\2021\share\gpr\libadalang.gpr
+20210520135030 bd75e68d6484bfbb8f78e9fb50ba702a
+C:\gnat\2021\share\gpr\xmlada_schema.gpr
+20210520132532 3e4769a7974bb33950daeeaa111bee0f
+C:\gnat\2021\share\gpr\xmlada_dom.gpr
+20210520132532 c9b6b60014bb093c8cd6e30c93cab443
+C:\gnat\2021\share\gpr\xmlada_input.gpr
+20210520132534 addd6a823fefaf8369eb2aae2a8cc914
+C:\gnat\2021\share\gpr\xmlada_sax.gpr
+20210520132532 2d22baa303c9284a31403f4a92239587
+C:\gnat\2021\share\gpr\xmlada_unicode.gpr
+20210520132534 f4c42fd1269de8c52cf43ca5615b3840
+C:\gnat\2021\share\gpr\xmlada.gpr
+20210519052322 fbddfe457d506cd4c8d63e4ab9f4d18b
+[BOUND OBJECT FILES]
+C:\Projects\hashingtest\obj\bitcoin.o
+C:\Projects\hashingtest\obj\fetch_bitcoin_info.o
+C:\Projects\hashingtest\obj\fetch_nostr_info.o
+C:\Projects\hashingtest\obj\main.o
+[GENERATED SOURCE FILES]
+b__main.ads
+b__main.adb
+b__main.ali
+[RESULTING OPTIONS]
+-LC:\Projects\hashingtest\obj\
+-LC:\Projects\hashingtest\obj\
+-LC:\gnat\2021\lib\xmlada\xmlada_unicode.static\
+-LC:\gnat\2021\lib\xmlada\xmlada_sax.static\
+-LC:\gnat\2021\lib\xmlada\xmlada_input.static\
+-LC:\gnat\2021\lib\xmlada\xmlada_dom.static\
+-LC:\gnat\2021\lib\xmlada\xmlada_schema.static\
+-LC:\gnat\2021\lib\libadalang.static\
+-LC:\gnat\2021\lib\langkit_support.static\
+-LC:\gnat\2021\lib\gnatcoll_iconv.static\
+-LC:\gnat\2021\lib\gpr\static\gpr\
+-LC:\gnat\2021\lib\gnatcoll.static\
+-LC:\gnat\2021\lib\gnatcoll_gmp.static\
+-LC:\gnat\2021\lib\aws.static\
+-LC:/gnat/2021/lib/gcc/x86_64-w64-mingw32/10.3.1/adalib/
+-static
+-static-libgcc
+C:/gnat/2021/lib/gcc/x86_64-w64-mingw32/10.3.1/adalib/libgnat.a
+-Wl,--stack=0x2000000

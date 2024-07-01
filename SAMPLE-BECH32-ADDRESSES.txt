@@ -1,0 +1,31 @@
+bc1q42kjb79elem0anu0h9s3h2n586re9jki556vtt
+bc1q57ktf34elen2aqr3h5s8h5n586re2ntt765mop
+
+nostr npub:
+npub1tlxrvs2uh6cz4jpk7zrfz25ygfsv3elsp58ffyjvr5zhp2wrfruqr8fvne
+
+
+
+shitty output:
+C:\Projects\hashingtest\bin\main
+------------------------------------------------------------------
+Current Time (UTC): 2024-06-28 19:31:08
+------------------------------------------------------------------
+Bitcoin Price (USD): 60297
+Block Height: 849858
+
+------------------------------------------------------------------
+------------------------------------------------------------------
+Discreet Log Contract Example
+Enter participant's name:
+Alice
+Enter Public Key for the participant:
+bc1q42kjb79elem0anu0h9s3h2n586re9jki556vtt
+Enter Amount in BTC:
+1.12345678
+------------------------------------------------------------------
+Participant 1 Name: Alice
+Participant 1 Public Key(Hex): 6263317134326B6A623739656C656D30616E75306839733368326E3538367265396A6B69353536767474
+Amount entered for Participant 1:  1.1234000 BTC
+------------------------------------------------------------------
+Enter participant's name:

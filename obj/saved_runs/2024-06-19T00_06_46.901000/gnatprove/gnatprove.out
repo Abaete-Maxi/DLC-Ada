@@ -1,0 +1,381 @@
+Summary of SPARK analysis
+=========================
+
+---------------------------------------------------------------------------------------------
+SPARK Analysis results        Total          Flow   CodePeer   Provers   Justified   Unproved
+---------------------------------------------------------------------------------------------
+Data Dependencies               194           194          .         .           .          .
+Flow Dependencies                 1             1          .         .           .          .
+Initialization                  353           353          .         .           .          .
+Non-Aliasing                      .             .          .         .           .          .
+Run-time Checks                   .             .          .         .           .          .
+Assertions                        .             .          .         .           .          .
+Functional Contracts              .             .          .         .           .          .
+LSP Verification                  .             .          .         .           .          .
+Termination                       .             .          .         .           .          .
+Concurrency                       .             .          .         .           .          .
+---------------------------------------------------------------------------------------------
+Total                           548    548 (100%)          .         .           .          .
+
+
+max steps used for successful proof: 0
+
+Analyzed 20 units
+in unit main, 0 subprograms and packages out of 1 analyzed
+  Main at main.adb:6 skipped
+in unit sparknacl, 30 subprograms and packages out of 32 analyzed
+  SPARKNaCl at sparknacl.ads:32 flow analyzed (0 errors, 0 checks and 0 warnings)
+  SPARKNaCl."*" at sparknacl.ads:459 flow analyzed (0 errors, 0 checks and 0 warnings)
+  SPARKNaCl."+" at sparknacl.ads:451 flow analyzed (0 errors, 0 checks and 0 warnings)
+  SPARKNaCl."-" at sparknacl.ads:455 flow analyzed (0 errors, 0 checks and 0 warnings)
+  SPARKNaCl.ASR32_16 at sparknacl.ads:426 flow analyzed (0 errors, 0 checks and 0 warnings)
+  SPARKNaCl.ASR64_16 at sparknacl.ads:418 flow analyzed (0 errors, 0 checks and 0 warnings)
+  SPARKNaCl.ASR_4 at sparknacl.ads:442 flow analyzed (0 errors, 0 checks and 0 warnings)
+  SPARKNaCl.ASR_8 at sparknacl.ads:434 flow analyzed (0 errors, 0 checks and 0 warnings)
+  SPARKNaCl.Difference_Gfpredicate at sparknacl.ads:338 flow analyzed (0 errors, 0 checks and 0 warnings)
+  SPARKNaCl.Equal at sparknacl.ads:112 flow analyzed (0 errors, 0 checks and 0 warnings)
+  SPARKNaCl.Mul_Phase2_Reduction at sparknacl.adb:197 flow analyzed (0 errors, 0 checks and 0 warnings)
+  SPARKNaCl.Mul_Productpredicate at sparknacl.adb:177 flow analyzed (0 errors, 0 checks and 0 warnings)
+  SPARKNaCl.Nearlynormal_Gfpredicate at sparknacl.ads:395 flow analyzed (0 errors, 0 checks and 0 warnings)
+  SPARKNaCl.Normal_Gf32predicate at sparknacl.ads:290 flow analyzed (0 errors, 0 checks and 0 warnings)
+  SPARKNaCl.Normal_Gf64predicate at sparknacl.ads:286 flow analyzed (0 errors, 0 checks and 0 warnings)
+  SPARKNaCl.Product_Gfpredicate at sparknacl.ads:355 flow analyzed (0 errors, 0 checks and 0 warnings)
+  SPARKNaCl.Sanitize at sparknacl.ads:147 flow analyzed (0 errors, 0 checks and 0 warnings)
+  SPARKNaCl.Sanitize_Boolean at sparknacl.ads:503 flow analyzed (0 errors, 0 checks and 0 warnings)
+  SPARKNaCl.Sanitize_GF16 at sparknacl.ads:486 flow analyzed (0 errors, 0 checks and 0 warnings)
+  SPARKNaCl.Sanitize_GF32 at sparknacl.ads:481 flow analyzed (0 errors, 0 checks and 0 warnings)
+  SPARKNaCl.Sanitize_GF64_PA at sparknacl.ads:491 flow analyzed (0 errors, 0 checks and 0 warnings)
+  SPARKNaCl.Sanitize_I64_Seq at sparknacl.ads:495 flow analyzed (0 errors, 0 checks and 0 warnings)
+  SPARKNaCl.Sanitize_U16 at sparknacl.ads:473 flow analyzed (0 errors, 0 checks and 0 warnings)
+  SPARKNaCl.Sanitize_U32 at sparknacl.ads:469 flow analyzed (0 errors, 0 checks and 0 warnings)
+  SPARKNaCl.Sanitize_U32_Seq at sparknacl.ads:499 flow analyzed (0 errors, 0 checks and 0 warnings)
+  SPARKNaCl.Sanitize_U64 at sparknacl.ads:477 flow analyzed (0 errors, 0 checks and 0 warnings)
+  SPARKNaCl.Seminormal_Gfpredicate at sparknacl.ads:379 flow analyzed (0 errors, 0 checks and 0 warnings)
+  SPARKNaCl.Shift_Right_Arithmetic at sparknacl.ads:97 skipped
+  SPARKNaCl.Shift_Right_Arithmetic at sparknacl.ads:102 skipped
+  SPARKNaCl.Square at sparknacl.ads:463 flow analyzed (0 errors, 0 checks and 0 warnings)
+  SPARKNaCl.Sum_Gfpredicate at sparknacl.ads:318 flow analyzed (0 errors, 0 checks and 0 warnings)
+  SPARKNaCl.To_Byte_Seq at sparknacl.ads:127 flow analyzed (0 errors, 0 checks and 0 warnings)
+in unit sparknacl-aes, 45 subprograms and packages out of 45 analyzed
+  SPARKNaCl.AES at sparknacl-aes.ads:1 flow analyzed (0 errors, 0 checks and 0 warnings)
+  SPARKNaCl.AES.AES128_Key at sparknacl-aes.ads:10 flow analyzed (0 errors, 0 checks and 0 warnings)
+  SPARKNaCl.AES.AES128_Round_Keys at sparknacl-aes.ads:13 flow analyzed (0 errors, 0 checks and 0 warnings)
+  SPARKNaCl.AES.AES256_Key at sparknacl-aes.ads:9 flow analyzed (0 errors, 0 checks and 0 warnings)
+  SPARKNaCl.AES.AES256_Round_Keys at sparknacl-aes.ads:12 flow analyzed (0 errors, 0 checks and 0 warnings)
+  SPARKNaCl.AES.Add_Round_Key at sparknacl-aes.adb:28 flow analyzed (0 errors, 0 checks and 0 warnings)
+  SPARKNaCl.AES.Cipher at sparknacl-aes.ads:61 flow analyzed (0 errors, 0 checks and 0 warnings)
+  SPARKNaCl.AES.Cipher at sparknacl-aes.ads:66 flow analyzed (0 errors, 0 checks and 0 warnings)
+  SPARKNaCl.AES.Construct at sparknacl-aes.ads:19 flow analyzed (0 errors, 0 checks and 0 warnings)
+  SPARKNaCl.AES.Construct at sparknacl-aes.ads:22 flow analyzed (0 errors, 0 checks and 0 warnings)
+  SPARKNaCl.AES.Construct at sparknacl-aes.ads:25 flow analyzed (0 errors, 0 checks and 0 warnings)
+  SPARKNaCl.AES.Construct at sparknacl-aes.ads:29 flow analyzed (0 errors, 0 checks and 0 warnings)
+  SPARKNaCl.AES.Construct_State at sparknacl-aes.adb:18 flow analyzed (0 errors, 0 checks and 0 warnings)
+  SPARKNaCl.AES.GF2p2p2p2_Inverse at sparknacl-aes.adb:32 flow analyzed (0 errors, 0 checks and 0 warnings)
+  SPARKNaCl.AES.GF2p2p2p2_Inverse.GF2p2_Inverse at sparknacl-aes.adb:131 flow analyzed (0 errors, 0 checks and 0 warnings)
+  SPARKNaCl.AES.GF2p2p2p2_Inverse.GF2p2_Multiply at sparknacl-aes.adb:125 flow analyzed (0 errors, 0 checks and 0 warnings)
+  SPARKNaCl.AES.GF2p2p2p2_Inverse.GF2p2p2_Inverse at sparknacl-aes.adb:142 flow analyzed (0 errors, 0 checks and 0 warnings)
+  SPARKNaCl.AES.GF2p2p2p2_Inverse.GF2p2p2_Multiply at sparknacl-aes.adb:136 flow analyzed (0 errors, 0 checks and 0 warnings)
+  SPARKNaCl.AES.Inv_Cipher at sparknacl-aes.ads:71 flow analyzed (0 errors, 0 checks and 0 warnings)
+  SPARKNaCl.AES.Inv_Cipher at sparknacl-aes.ads:76 flow analyzed (0 errors, 0 checks and 0 warnings)
+  SPARKNaCl.AES.Inv_Mix_Columns at sparknacl-aes.adb:68 flow analyzed (0 errors, 0 checks and 0 warnings)
+  SPARKNaCl.AES.Inv_Mix_Columns.Matrix_Multiplication at sparknacl-aes.adb:483 flow analyzed (0 errors, 0 checks and 0 warnings)
+  SPARKNaCl.AES.Inv_Sbox at sparknacl-aes.adb:40 flow analyzed (0 errors, 0 checks and 0 warnings)
+  SPARKNaCl.AES.Inv_Sbox.Backward_Map at sparknacl-aes.adb:294 flow analyzed (0 errors, 0 checks and 0 warnings)
+  SPARKNaCl.AES.Inv_Sbox.Forward_Map at sparknacl-aes.adb:291 flow analyzed (0 errors, 0 checks and 0 warnings)
+  SPARKNaCl.AES.Inv_Shift_Rows at sparknacl-aes.adb:53 flow analyzed (0 errors, 0 checks and 0 warnings)
+  SPARKNaCl.AES.Inv_Sub_Bytes at sparknacl-aes.adb:47 flow analyzed (0 errors, 0 checks and 0 warnings)
+  SPARKNaCl.AES.Key_Expansion at sparknacl-aes.ads:55 flow analyzed (0 errors, 0 checks and 0 warnings)
+  SPARKNaCl.AES.Key_Expansion at sparknacl-aes.ads:58 flow analyzed (0 errors, 0 checks and 0 warnings)
+  SPARKNaCl.AES.Mix_Columns at sparknacl-aes.adb:65 flow analyzed (0 errors, 0 checks and 0 warnings)
+  SPARKNaCl.AES.Mix_Columns_Matrix_Multiplication at sparknacl-aes.adb:60 flow analyzed (0 errors, 0 checks and 0 warnings)
+  SPARKNaCl.AES.Round_Key_CumSum at sparknacl-aes.adb:71 flow analyzed (0 errors, 0 checks and 0 warnings)
+  SPARKNaCl.AES.Sanitize at sparknacl-aes.ads:39 flow analyzed (0 errors, 0 checks and 0 warnings)
+  SPARKNaCl.AES.Sanitize at sparknacl-aes.ads:42 flow analyzed (0 errors, 0 checks and 0 warnings)
+  SPARKNaCl.AES.Sanitize at sparknacl-aes.ads:45 flow analyzed (0 errors, 0 checks and 0 warnings)
+  SPARKNaCl.AES.Sanitize at sparknacl-aes.ads:48 flow analyzed (0 errors, 0 checks and 0 warnings)
+  SPARKNaCl.AES.Sbox at sparknacl-aes.adb:36 flow analyzed (0 errors, 0 checks and 0 warnings)
+  SPARKNaCl.AES.Sbox.Backward_Map at sparknacl-aes.adb:241 flow analyzed (0 errors, 0 checks and 0 warnings)
+  SPARKNaCl.AES.Sbox.Forward_Map at sparknacl-aes.adb:238 flow analyzed (0 errors, 0 checks and 0 warnings)
+  SPARKNaCl.AES.Serialize at sparknacl-aes.ads:33 flow analyzed (0 errors, 0 checks and 0 warnings)
+  SPARKNaCl.AES.Serialize at sparknacl-aes.ads:36 flow analyzed (0 errors, 0 checks and 0 warnings)
+  SPARKNaCl.AES.Serialize_State at sparknacl-aes.adb:21 flow analyzed (0 errors, 0 checks and 0 warnings)
+  SPARKNaCl.AES.Shift_Rows at sparknacl-aes.adb:50 flow analyzed (0 errors, 0 checks and 0 warnings)
+  SPARKNaCl.AES.Sub_Bytes at sparknacl-aes.adb:44 flow analyzed (0 errors, 0 checks and 0 warnings)
+  SPARKNaCl.AES.X_Times at sparknacl-aes.adb:56 flow analyzed (0 errors, 0 checks and 0 warnings)
+in unit sparknacl-car, 4 subprograms and packages out of 4 analyzed
+  SPARKNaCl.Car at sparknacl-car.ads:1 flow analyzed (0 errors, 0 checks and 0 warnings)
+  SPARKNaCl.Car.Nearlynormal_To_Normal at sparknacl-car.ads:17 flow analyzed (0 errors, 0 checks and 0 warnings)
+  SPARKNaCl.Car.Nearlynormal_To_Normal.Carrying_Minus_One at sparknacl-car.adb:48 flow analyzed (0 errors, 0 checks and 0 warnings)
+  SPARKNaCl.Car.Nearlynormal_To_Normal.Carrying_Plus_One at sparknacl-car.adb:29 flow analyzed (0 errors, 0 checks and 0 warnings)
+in unit sparknacl-core, 27 subprograms and packages out of 27 analyzed
+  SPARKNaCl.Core at sparknacl-core.ads:1 flow analyzed (0 errors, 0 checks and 0 warnings)
+  SPARKNaCl.Core.ChaCha20_Context at sparknacl-core.ads:9 flow analyzed (0 errors, 0 checks and 0 warnings)
+  SPARKNaCl.Core.ChaCha20_Encrypt_Bytes at sparknacl-core.ads:83 flow analyzed (0 errors, 0 checks and 0 warnings)
+  SPARKNaCl.Core.ChaCha20_Encrypt_Bytes.Assign_X_To at sparknacl-core.adb:417 flow analyzed (0 errors, 0 checks and 0 warnings)
+  SPARKNaCl.Core.ChaCha20_Encrypt_Bytes.Quarter_Round at sparknacl-core.adb:410 flow analyzed (0 errors, 0 checks and 0 warnings)
+  SPARKNaCl.Core.ChaCha20_Encrypt_Bytes.Quarter_Rounds at sparknacl-core.adb:413 flow analyzed (0 errors, 0 checks and 0 warnings)
+  SPARKNaCl.Core.ChaCha20_Encrypt_Bytes.Update_Xs at sparknacl-core.adb:423 flow analyzed (0 errors, 0 checks and 0 warnings)
+  SPARKNaCl.Core.ChaCha20_Key at sparknacl-core.ads:8 flow analyzed (0 errors, 0 checks and 0 warnings)
+  SPARKNaCl.Core.ChaCha20_Key_IV_IETF_Setup at sparknacl-core.ads:77 flow analyzed (0 errors, 0 checks and 0 warnings)
+  SPARKNaCl.Core.ChaCha20_Key_IV_Setup at sparknacl-core.ads:71 flow analyzed (0 errors, 0 checks and 0 warnings)
+  SPARKNaCl.Core.Construct at sparknacl-core.ads:18 flow analyzed (0 errors, 0 checks and 0 warnings)
+  SPARKNaCl.Core.Construct at sparknacl-core.ads:21 flow analyzed (0 errors, 0 checks and 0 warnings)
+  SPARKNaCl.Core.Construct at sparknacl-core.ads:35 flow analyzed (0 errors, 0 checks and 0 warnings)
+  SPARKNaCl.Core.Construct at sparknacl-core.ads:38 flow analyzed (0 errors, 0 checks and 0 warnings)
+  SPARKNaCl.Core.Core_Common at sparknacl-core.adb:14 flow analyzed (0 errors, 0 checks and 0 warnings)
+  SPARKNaCl.Core.Core_Common.Adjust_T at sparknacl-core.adb:93 flow analyzed (0 errors, 0 checks and 0 warnings)
+  SPARKNaCl.Core.HSalsa20 at sparknacl-core.ads:61 flow analyzed (0 errors, 0 checks and 0 warnings)
+  SPARKNaCl.Core.LD32 at sparknacl-core.adb:36 flow analyzed (0 errors, 0 checks and 0 warnings)
+  SPARKNaCl.Core.ST32 at sparknacl-core.adb:24 flow analyzed (0 errors, 0 checks and 0 warnings)
+  SPARKNaCl.Core.ST64 at sparknacl-core.adb:30 flow analyzed (0 errors, 0 checks and 0 warnings)
+  SPARKNaCl.Core.Salsa20 at sparknacl-core.ads:55 flow analyzed (0 errors, 0 checks and 0 warnings)
+  SPARKNaCl.Core.Salsa20_Key at sparknacl-core.ads:7 flow analyzed (0 errors, 0 checks and 0 warnings)
+  SPARKNaCl.Core.Sanitize at sparknacl-core.ads:28 flow analyzed (0 errors, 0 checks and 0 warnings)
+  SPARKNaCl.Core.Sanitize at sparknacl-core.ads:45 flow analyzed (0 errors, 0 checks and 0 warnings)
+  SPARKNaCl.Core.Sanitize at sparknacl-core.ads:48 flow analyzed (0 errors, 0 checks and 0 warnings)
+  SPARKNaCl.Core.Serialize at sparknacl-core.ads:25 flow analyzed (0 errors, 0 checks and 0 warnings)
+  SPARKNaCl.Core.Serialize at sparknacl-core.ads:42 flow analyzed (0 errors, 0 checks and 0 warnings)
+in unit sparknacl-cryptobox, 15 subprograms and packages out of 15 analyzed
+  SPARKNaCl.Cryptobox at sparknacl-cryptobox.ads:3 flow analyzed (0 errors, 0 checks and 0 warnings)
+  SPARKNaCl.Cryptobox.AfterNM at sparknacl-cryptobox.ads:52 flow analyzed (0 errors, 0 checks and 0 warnings)
+  SPARKNaCl.Cryptobox.BeforeNM at sparknacl-cryptobox.ads:45 flow analyzed (0 errors, 0 checks and 0 warnings)
+   suppressed messages:
+    sparknacl-cryptobox.adb:67:7: 
+    sparknacl-cryptobox.adb:68:7: 
+  SPARKNaCl.Cryptobox.Construct at sparknacl-cryptobox.ads:25 flow analyzed (0 errors, 0 checks and 0 warnings)
+  SPARKNaCl.Cryptobox.Construct at sparknacl-cryptobox.ads:28 flow analyzed (0 errors, 0 checks and 0 warnings)
+  SPARKNaCl.Cryptobox.Create at sparknacl-cryptobox.ads:81 flow analyzed (0 errors, 0 checks and 0 warnings)
+   suppressed messages:
+    sparknacl-cryptobox.adb:105:11: 
+  SPARKNaCl.Cryptobox.Keypair at sparknacl-cryptobox.ads:20 flow analyzed (0 errors, 0 checks and 0 warnings)
+  SPARKNaCl.Cryptobox.Open at sparknacl-cryptobox.ads:97 flow analyzed (0 errors, 0 checks and 0 warnings)
+   suppressed messages:
+    sparknacl-cryptobox.adb:121:11: 
+  SPARKNaCl.Cryptobox.Open_AfterNM at sparknacl-cryptobox.ads:66 flow analyzed (0 errors, 0 checks and 0 warnings)
+  SPARKNaCl.Cryptobox.Public_Key at sparknacl-cryptobox.ads:14 flow analyzed (0 errors, 0 checks and 0 warnings)
+  SPARKNaCl.Cryptobox.Sanitize at sparknacl-cryptobox.ads:38 flow analyzed (0 errors, 0 checks and 0 warnings)
+  SPARKNaCl.Cryptobox.Sanitize at sparknacl-cryptobox.ads:41 flow analyzed (0 errors, 0 checks and 0 warnings)
+  SPARKNaCl.Cryptobox.Secret_Key at sparknacl-cryptobox.ads:13 flow analyzed (0 errors, 0 checks and 0 warnings)
+  SPARKNaCl.Cryptobox.Serialize at sparknacl-cryptobox.ads:31 flow analyzed (0 errors, 0 checks and 0 warnings)
+  SPARKNaCl.Cryptobox.Serialize at sparknacl-cryptobox.ads:34 flow analyzed (0 errors, 0 checks and 0 warnings)
+in unit sparknacl-debug, 1 subprograms and packages out of 7 analyzed
+  SPARKNaCl.Debug at sparknacl-debug.ads:1 skipped
+  SPARKNaCl.Debug.DH at sparknacl-debug.ads:9 skipped
+  SPARKNaCl.Debug.DH at sparknacl-debug.ads:10 skipped
+  SPARKNaCl.Debug.DH at sparknacl-debug.ads:11 skipped
+  SPARKNaCl.Debug.DH at sparknacl-debug.ads:13 skipped
+  SPARKNaCl.Debug.DHH at sparknacl-debug.ads:15 skipped
+  SPARKNaCl.Debug.Img at sparknacl-debug.ads:6 flow analyzed (0 errors, 0 checks and 0 warnings)
+in unit sparknacl-hashing, 2 subprograms and packages out of 2 analyzed
+  SPARKNaCl.Hashing at sparknacl-hashing.ads:1 flow analyzed (0 errors, 0 checks and 0 warnings)
+  SPARKNaCl.Hashing.TS64 at sparknacl-hashing.ads:7 flow analyzed (0 errors, 0 checks and 0 warnings)
+in unit sparknacl-hashing-rfsb509, 10 subprograms and packages out of 10 analyzed
+  SPARKNaCl.Hashing.RFSB509 at sparknacl-hashing-rfsb509.ads:2 flow analyzed (0 errors, 0 checks and 0 warnings)
+  SPARKNaCl.Hashing.RFSB509.Add at sparknacl-hashing-rfsb509.adb:49 flow analyzed (0 errors, 0 checks and 0 warnings)
+  SPARKNaCl.Hashing.RFSB509.Calculate_Column at sparknacl-hashing-rfsb509.adb:37 flow analyzed (0 errors, 0 checks and 0 warnings)
+  SPARKNaCl.Hashing.RFSB509.Compress at sparknacl-hashing-rfsb509.adb:53 flow analyzed (0 errors, 0 checks and 0 warnings)
+  SPARKNaCl.Hashing.RFSB509.Hash at sparknacl-hashing-rfsb509.ads:18 flow analyzed (0 errors, 0 checks and 0 warnings)
+  SPARKNaCl.Hashing.RFSB509.Hash at sparknacl-hashing-rfsb509.ads:27 flow analyzed (0 errors, 0 checks and 0 warnings)
+  SPARKNaCl.Hashing.RFSB509.Hash_Blocks at sparknacl-hashing-rfsb509.adb:58 flow analyzed (0 errors, 0 checks and 0 warnings)
+  SPARKNaCl.Hashing.RFSB509.Hash_Local at sparknacl-hashing-rfsb509.adb:65 flow analyzed (0 errors, 0 checks and 0 warnings)
+  SPARKNaCl.Hashing.RFSB509.Matrix_Columnpredicate at sparknacl-hashing-rfsb509.adb:28 flow analyzed (0 errors, 0 checks and 0 warnings)
+  SPARKNaCl.Hashing.RFSB509.Mul128 at sparknacl-hashing-rfsb509.adb:46 flow analyzed (0 errors, 0 checks and 0 warnings)
+in unit sparknacl-hashing-sha256, 12 subprograms and packages out of 12 analyzed
+  SPARKNaCl.Hashing.SHA256 at sparknacl-hashing-sha256.ads:1 flow analyzed (0 errors, 0 checks and 0 warnings)
+  SPARKNaCl.Hashing.SHA256.DL32 at sparknacl-hashing-sha256.adb:57 flow analyzed (0 errors, 0 checks and 0 warnings)
+  SPARKNaCl.Hashing.SHA256.Hash at sparknacl-hashing-sha256.ads:12 flow analyzed (0 errors, 0 checks and 0 warnings)
+  SPARKNaCl.Hashing.SHA256.Hash at sparknacl-hashing-sha256.ads:20 flow analyzed (0 errors, 0 checks and 0 warnings)
+  SPARKNaCl.Hashing.SHA256.Hashblocks_256 at sparknacl-hashing-sha256.adb:64 flow analyzed (0 errors, 0 checks and 0 warnings)
+  SPARKNaCl.Hashing.SHA256.Hashblocks_256.Ch at sparknacl-hashing-sha256.adb:114 flow analyzed (0 errors, 0 checks and 0 warnings)
+  SPARKNaCl.Hashing.SHA256.Hashblocks_256.LC_Sigma0 at sparknacl-hashing-sha256.adb:133 flow analyzed (0 errors, 0 checks and 0 warnings)
+  SPARKNaCl.Hashing.SHA256.Hashblocks_256.LC_Sigma1 at sparknacl-hashing-sha256.adb:138 flow analyzed (0 errors, 0 checks and 0 warnings)
+  SPARKNaCl.Hashing.SHA256.Hashblocks_256.Maj at sparknacl-hashing-sha256.adb:118 flow analyzed (0 errors, 0 checks and 0 warnings)
+  SPARKNaCl.Hashing.SHA256.Hashblocks_256.UC_Sigma0 at sparknacl-hashing-sha256.adb:123 flow analyzed (0 errors, 0 checks and 0 warnings)
+  SPARKNaCl.Hashing.SHA256.Hashblocks_256.UC_Sigma1 at sparknacl-hashing-sha256.adb:128 flow analyzed (0 errors, 0 checks and 0 warnings)
+  SPARKNaCl.Hashing.SHA256.TS32 at sparknacl-hashing-sha256.adb:52 flow analyzed (0 errors, 0 checks and 0 warnings)
+in unit sparknacl-hashing-sha512, 12 subprograms and packages out of 12 analyzed
+  SPARKNaCl.Hashing.SHA512 at sparknacl-hashing-sha512.ads:1 flow analyzed (0 errors, 0 checks and 0 warnings)
+  SPARKNaCl.Hashing.SHA512.DL64 at sparknacl-hashing-sha512.adb:75 flow analyzed (0 errors, 0 checks and 0 warnings)
+  SPARKNaCl.Hashing.SHA512.Hash at sparknacl-hashing-sha512.ads:12 flow analyzed (0 errors, 0 checks and 0 warnings)
+  SPARKNaCl.Hashing.SHA512.Hash at sparknacl-hashing-sha512.ads:20 flow analyzed (0 errors, 0 checks and 0 warnings)
+  SPARKNaCl.Hashing.SHA512.Hash_512 at sparknacl-hashing-sha512.adb:69 flow analyzed (0 errors, 0 checks and 0 warnings)
+  SPARKNaCl.Hashing.SHA512.Hashblocks_512 at sparknacl-hashing-sha512.adb:64 flow analyzed (0 errors, 0 checks and 0 warnings)
+  SPARKNaCl.Hashing.SHA512.Hashblocks_512.Ch at sparknacl-hashing-sha512.adb:118 flow analyzed (0 errors, 0 checks and 0 warnings)
+  SPARKNaCl.Hashing.SHA512.Hashblocks_512.LC_Sigma0 at sparknacl-hashing-sha512.adb:137 flow analyzed (0 errors, 0 checks and 0 warnings)
+  SPARKNaCl.Hashing.SHA512.Hashblocks_512.LC_Sigma1 at sparknacl-hashing-sha512.adb:142 flow analyzed (0 errors, 0 checks and 0 warnings)
+  SPARKNaCl.Hashing.SHA512.Hashblocks_512.Maj at sparknacl-hashing-sha512.adb:122 flow analyzed (0 errors, 0 checks and 0 warnings)
+  SPARKNaCl.Hashing.SHA512.Hashblocks_512.UC_Sigma0 at sparknacl-hashing-sha512.adb:127 flow analyzed (0 errors, 0 checks and 0 warnings)
+  SPARKNaCl.Hashing.SHA512.Hashblocks_512.UC_Sigma1 at sparknacl-hashing-sha512.adb:132 flow analyzed (0 errors, 0 checks and 0 warnings)
+in unit sparknacl-hkdf, 4 subprograms and packages out of 4 analyzed
+  SPARKNaCl.HKDF at sparknacl-hkdf.ads:2 flow analyzed (0 errors, 0 checks and 0 warnings)
+  SPARKNaCl.HKDF.Expand at sparknacl-hkdf.ads:25 flow analyzed (0 errors, 0 checks and 0 warnings)
+  SPARKNaCl.HKDF.Extract at sparknacl-hkdf.ads:15 flow analyzed (0 errors, 0 checks and 0 warnings)
+  SPARKNaCl.HKDF.KDF at sparknacl-hkdf.ads:39 flow analyzed (0 errors, 0 checks and 0 warnings)
+in unit sparknacl-mac, 10 subprograms and packages out of 10 analyzed
+  SPARKNaCl.MAC at sparknacl-mac.ads:2 flow analyzed (0 errors, 0 checks and 0 warnings)
+  SPARKNaCl.MAC.Construct at sparknacl-mac.ads:10 flow analyzed (0 errors, 0 checks and 0 warnings)
+  SPARKNaCl.MAC.Construct at sparknacl-mac.ads:13 flow analyzed (0 errors, 0 checks and 0 warnings)
+  SPARKNaCl.MAC.HMAC_SHA_256 at sparknacl-mac.ads:43 flow analyzed (0 errors, 0 checks and 0 warnings)
+  SPARKNaCl.MAC.Onetimeauth at sparknacl-mac.ads:27 flow analyzed (0 errors, 0 checks and 0 warnings)
+  SPARKNaCl.MAC.Onetimeauth.Add_1305 at sparknacl-mac.adb:47 flow analyzed (0 errors, 0 checks and 0 warnings)
+  SPARKNaCl.MAC.Onetimeauth_Verify at sparknacl-mac.ads:33 flow analyzed (0 errors, 0 checks and 0 warnings)
+  SPARKNaCl.MAC.Poly_1305_Key at sparknacl-mac.ads:8 flow analyzed (0 errors, 0 checks and 0 warnings)
+  SPARKNaCl.MAC.Sanitize at sparknacl-mac.ads:20 flow analyzed (0 errors, 0 checks and 0 warnings)
+  SPARKNaCl.MAC.Serialize at sparknacl-mac.ads:17 flow analyzed (0 errors, 0 checks and 0 warnings)
+in unit sparknacl-pdebug, 0 subprograms and packages out of 22 analyzed
+  SPARKNaCl.PDebug at sparknacl-pdebug.ads:1 skipped
+  SPARKNaCl.PDebug.DH16 at sparknacl-pdebug.ads:5 skipped
+  SPARKNaCl.PDebug.DH32 at sparknacl-pdebug.ads:7 skipped
+  SPARKNaCl.PDebug.DH64 at sparknacl-pdebug.ads:9 skipped
+  SPARKNaCl.PDebug.I64IO.Aux_Int.Get at a-tiinau.ads:52, instantiated at a-tiinio.adb:48, instantiated at sparknacl-pdebug.adb:6 skipped
+  SPARKNaCl.PDebug.I64IO.Aux_Int.Gets at a-tiinau.ads:57, instantiated at a-tiinio.adb:48, instantiated at sparknacl-pdebug.adb:6 skipped
+  SPARKNaCl.PDebug.I64IO.Aux_Int.Put at a-tiinau.ads:62, instantiated at a-tiinio.adb:48, instantiated at sparknacl-pdebug.adb:6 skipped
+  SPARKNaCl.PDebug.I64IO.Aux_Int.Puts at a-tiinau.ads:68, instantiated at a-tiinio.adb:48, instantiated at sparknacl-pdebug.adb:6 skipped
+  SPARKNaCl.PDebug.I64IO.Aux_LLI.Get at a-tiinau.ads:52, instantiated at a-tiinio.adb:56, instantiated at sparknacl-pdebug.adb:6 skipped
+  SPARKNaCl.PDebug.I64IO.Aux_LLI.Gets at a-tiinau.ads:57, instantiated at a-tiinio.adb:56, instantiated at sparknacl-pdebug.adb:6 skipped
+  SPARKNaCl.PDebug.I64IO.Aux_LLI.Put at a-tiinau.ads:62, instantiated at a-tiinio.adb:56, instantiated at sparknacl-pdebug.adb:6 skipped
+  SPARKNaCl.PDebug.I64IO.Aux_LLI.Puts at a-tiinau.ads:68, instantiated at a-tiinio.adb:56, instantiated at sparknacl-pdebug.adb:6 skipped
+  SPARKNaCl.PDebug.I64IO.Aux_LLLI.Get at a-tiinau.ads:52, instantiated at a-tiinio.adb:64, instantiated at sparknacl-pdebug.adb:6 skipped
+  SPARKNaCl.PDebug.I64IO.Aux_LLLI.Gets at a-tiinau.ads:57, instantiated at a-tiinio.adb:64, instantiated at sparknacl-pdebug.adb:6 skipped
+  SPARKNaCl.PDebug.I64IO.Aux_LLLI.Put at a-tiinau.ads:62, instantiated at a-tiinio.adb:64, instantiated at sparknacl-pdebug.adb:6 skipped
+  SPARKNaCl.PDebug.I64IO.Aux_LLLI.Puts at a-tiinau.ads:68, instantiated at a-tiinio.adb:64, instantiated at sparknacl-pdebug.adb:6 skipped
+  SPARKNaCl.PDebug.I64IO.Get at a-tiinio.ads:51, instantiated at sparknacl-pdebug.adb:6 skipped
+  SPARKNaCl.PDebug.I64IO.Get at a-tiinio.ads:59, instantiated at sparknacl-pdebug.adb:6 skipped
+  SPARKNaCl.PDebug.I64IO.Get at a-tiinio.ads:90, instantiated at sparknacl-pdebug.adb:6 skipped
+  SPARKNaCl.PDebug.I64IO.Put at a-tiinio.ads:68, instantiated at sparknacl-pdebug.adb:6 skipped
+  SPARKNaCl.PDebug.I64IO.Put at a-tiinio.ads:80, instantiated at sparknacl-pdebug.adb:6 skipped
+  SPARKNaCl.PDebug.I64IO.Put at a-tiinio.ads:97, instantiated at sparknacl-pdebug.adb:6 skipped
+in unit sparknacl-scalar, 3 subprograms and packages out of 3 analyzed
+  SPARKNaCl.Scalar at sparknacl-scalar.ads:1 flow analyzed (0 errors, 0 checks and 0 warnings)
+  SPARKNaCl.Scalar.Mult at sparknacl-scalar.ads:9 flow analyzed (0 errors, 0 checks and 0 warnings)
+   suppressed messages:
+    sparknacl-scalar.adb:101:7: 
+    sparknacl-scalar.adb:102:7: 
+    sparknacl-scalar.adb:103:7: 
+    sparknacl-scalar.adb:104:7: 
+    sparknacl-scalar.adb:105:7: 
+    sparknacl-scalar.adb:106:7: 
+    sparknacl-scalar.adb:107:7: 
+    sparknacl-scalar.adb:108:7: 
+    sparknacl-scalar.adb:109:7: 
+    sparknacl-scalar.adb:110:7: 
+    sparknacl-scalar.adb:111:7: 
+  SPARKNaCl.Scalar.Mult_Base at sparknacl-scalar.ads:14 flow analyzed (0 errors, 0 checks and 0 warnings)
+in unit sparknacl-secretbox, 8 subprograms and packages out of 8 analyzed
+  SPARKNaCl.Secretbox at sparknacl-secretbox.ads:3 flow analyzed (0 errors, 0 checks and 0 warnings)
+  SPARKNaCl.Secretbox.Create at sparknacl-secretbox.ads:13 flow analyzed (0 errors, 0 checks and 0 warnings)
+  SPARKNaCl.Secretbox.Create at sparknacl-secretbox.ads:48 flow analyzed (0 errors, 0 checks and 0 warnings)
+  SPARKNaCl.Secretbox.Gen_Auth_Msg at sparknacl-secretbox.adb:105 flow analyzed (0 errors, 0 checks and 0 warnings)
+  SPARKNaCl.Secretbox.Gen_Auth_Msg.LE64 at sparknacl-secretbox.adb:122 flow analyzed (0 errors, 0 checks and 0 warnings)
+  SPARKNaCl.Secretbox.Gen_Auth_Msg.Pad16 at sparknacl-secretbox.adb:125 flow analyzed (0 errors, 0 checks and 0 warnings)
+  SPARKNaCl.Secretbox.Open at sparknacl-secretbox.ads:27 flow analyzed (0 errors, 0 checks and 0 warnings)
+  SPARKNaCl.Secretbox.Open at sparknacl-secretbox.ads:66 flow analyzed (0 errors, 0 checks and 0 warnings)
+in unit sparknacl-sign, 29 subprograms and packages out of 29 analyzed
+  SPARKNaCl.Sign at sparknacl-sign.ads:1 flow analyzed (0 errors, 0 checks and 0 warnings)
+  SPARKNaCl.Sign."+" at sparknacl-sign.adb:63 flow analyzed (0 errors, 0 checks and 0 warnings)
+  SPARKNaCl.Sign."+".Double at sparknacl-sign.adb:115 flow analyzed (0 errors, 0 checks and 0 warnings)
+  SPARKNaCl.Sign.Hash_Reduce at sparknacl-sign.adb:88 flow analyzed (0 errors, 0 checks and 0 warnings)
+  SPARKNaCl.Sign.Keypair at sparknacl-sign.ads:14 flow analyzed (0 errors, 0 checks and 0 warnings)
+   suppressed messages:
+    sparknacl-sign.adb:880:7: 
+    sparknacl-sign.adb:881:7: 
+  SPARKNaCl.Sign.ModL at sparknacl-sign.adb:54 flow analyzed (0 errors, 0 checks and 0 warnings)
+   suppressed messages:
+    sparknacl-sign.adb:727:7: 
+  SPARKNaCl.Sign.ModL.Eliminate_Limb_63 at sparknacl-sign.adb:286 flow analyzed (0 errors, 0 checks and 0 warnings)
+  SPARKNaCl.Sign.ModL.Eliminate_Limbs_62_To_32 at sparknacl-sign.adb:303 flow analyzed (0 errors, 0 checks and 0 warnings)
+  SPARKNaCl.Sign.ModL.Finalize at sparknacl-sign.adb:322 flow analyzed (0 errors, 0 checks and 0 warnings)
+  SPARKNaCl.Sign.ModL.Initialize_XL at sparknacl-sign.adb:278 flow analyzed (0 errors, 0 checks and 0 warnings)
+  SPARKNaCl.Sign.Open at sparknacl-sign.ads:54 flow analyzed (0 errors, 0 checks and 0 warnings)
+   suppressed messages:
+    sparknacl-sign.adb:1106:10: 
+    sparknacl-sign.adb:1122:10: 
+    sparknacl-sign.adb:1123:10: 
+    sparknacl-sign.adb:1124:10: 
+    sparknacl-sign.adb:1134:7: 
+    sparknacl-sign.adb:1135:7: 
+    sparknacl-sign.adb:1136:7: 
+  SPARKNaCl.Sign.PK_From_Bytes at sparknacl-sign.ads:19 flow analyzed (0 errors, 0 checks and 0 warnings)
+  SPARKNaCl.Sign.Pack at sparknacl-sign.adb:76 flow analyzed (0 errors, 0 checks and 0 warnings)
+  SPARKNaCl.Sign.Par_25519 at sparknacl-sign.adb:82 flow analyzed (0 errors, 0 checks and 0 warnings)
+  SPARKNaCl.Sign.Sanitize at sparknacl-sign.ads:31 flow analyzed (0 errors, 0 checks and 0 warnings)
+  SPARKNaCl.Sign.Sanitize at sparknacl-sign.ads:34 flow analyzed (0 errors, 0 checks and 0 warnings)
+  SPARKNaCl.Sign.Sanitize_GF_Vector_4 at sparknacl-sign.adb:59 flow analyzed (0 errors, 0 checks and 0 warnings)
+  SPARKNaCl.Sign.Scalarbase at sparknacl-sign.adb:72 flow analyzed (0 errors, 0 checks and 0 warnings)
+  SPARKNaCl.Sign.Scalarmult at sparknacl-sign.adb:67 flow analyzed (0 errors, 0 checks and 0 warnings)
+  SPARKNaCl.Sign.Scalarmult.CSwap at sparknacl-sign.adb:143 flow analyzed (0 errors, 0 checks and 0 warnings)
+  SPARKNaCl.Sign.Serialize at sparknacl-sign.ads:25 flow analyzed (0 errors, 0 checks and 0 warnings)
+  SPARKNaCl.Sign.Serialize at sparknacl-sign.ads:28 flow analyzed (0 errors, 0 checks and 0 warnings)
+  SPARKNaCl.Sign.Sign at sparknacl-sign.ads:42 flow analyzed (0 errors, 0 checks and 0 warnings)
+   suppressed messages:
+    sparknacl-sign.adb:1077:7: 
+    sparknacl-sign.adb:1078:7: 
+    sparknacl-sign.adb:1079:7: 
+    sparknacl-sign.adb:1080:7: 
+  SPARKNaCl.Sign.Sign.Initialize_SM at sparknacl-sign.adb:905 flow analyzed (0 errors, 0 checks and 0 warnings)
+  SPARKNaCl.Sign.Signing_PK at sparknacl-sign.ads:7 flow analyzed (0 errors, 0 checks and 0 warnings)
+  SPARKNaCl.Sign.Signing_SK at sparknacl-sign.ads:8 flow analyzed (0 errors, 0 checks and 0 warnings)
+  SPARKNaCl.Sign.Unpackneg at sparknacl-sign.adb:92 flow analyzed (0 errors, 0 checks and 0 warnings)
+  SPARKNaCl.Sign.Unpackneg."=" at sparknacl-sign.adb:757 flow analyzed (0 errors, 0 checks and 0 warnings)
+  SPARKNaCl.Sign.Unpackneg.Pow_2523 at sparknacl-sign.adb:761 flow analyzed (0 errors, 0 checks and 0 warnings)
+in unit sparknacl-sign-utils, 2 subprograms and packages out of 2 analyzed
+  SPARKNaCl.Sign.Utils at sparknacl-sign-utils.ads:1 flow analyzed (0 errors, 0 checks and 0 warnings)
+  SPARKNaCl.Sign.Utils.Construct at sparknacl-sign-utils.ads:5 flow analyzed (0 errors, 0 checks and 0 warnings)
+in unit sparknacl-stream, 12 subprograms and packages out of 12 analyzed
+  SPARKNaCl.Stream at sparknacl-stream.ads:2 flow analyzed (0 errors, 0 checks and 0 warnings)
+  SPARKNaCl.Stream.ChaCha20 at sparknacl-stream.ads:50 flow analyzed (0 errors, 0 checks and 0 warnings)
+  SPARKNaCl.Stream.ChaCha20_IETF at sparknacl-stream.ads:73 flow analyzed (0 errors, 0 checks and 0 warnings)
+  SPARKNaCl.Stream.ChaCha20_IETF_Local at sparknacl-stream.adb:36 flow analyzed (0 errors, 0 checks and 0 warnings)
+   suppressed messages:
+    sparknacl-stream.adb:244:7: 
+  SPARKNaCl.Stream.ChaCha20_IETF_Xor at sparknacl-stream.ads:81 flow analyzed (0 errors, 0 checks and 0 warnings)
+  SPARKNaCl.Stream.ChaCha20_Local at sparknacl-stream.adb:23 flow analyzed (0 errors, 0 checks and 0 warnings)
+   suppressed messages:
+    sparknacl-stream.adb:229:7: 
+  SPARKNaCl.Stream.ChaCha20_Xor at sparknacl-stream.ads:58 flow analyzed (0 errors, 0 checks and 0 warnings)
+  SPARKNaCl.Stream.HSalsa20 at sparknacl-stream.ads:15 flow analyzed (0 errors, 0 checks and 0 warnings)
+   suppressed messages:
+    sparknacl-stream.adb:192:7: 
+  SPARKNaCl.Stream.HSalsa20_Xor at sparknacl-stream.ads:22 flow analyzed (0 errors, 0 checks and 0 warnings)
+   suppressed messages:
+    sparknacl-stream.adb:210:7: 
+  SPARKNaCl.Stream.Salsa20 at sparknacl-stream.ads:31 flow analyzed (0 errors, 0 checks and 0 warnings)
+  SPARKNaCl.Stream.Salsa20_Xor at sparknacl-stream.ads:37 flow analyzed (0 errors, 0 checks and 0 warnings)
+  SPARKNaCl.Stream.Salsa20_Xor_Local at sparknacl-stream.adb:10 flow analyzed (0 errors, 0 checks and 0 warnings)
+   suppressed messages:
+    sparknacl-stream.adb:155:7: 
+    sparknacl-stream.adb:156:7: 
+in unit sparknacl-utils, 17 subprograms and packages out of 19 analyzed
+  SPARKNaCl.Utils at sparknacl-utils.ads:1 flow analyzed (0 errors, 0 checks and 0 warnings)
+  SPARKNaCl.Utils.Big_Endian_Pack at sparknacl-utils.ads:27 flow analyzed (0 errors, 0 checks and 0 warnings)
+  SPARKNaCl.Utils.Big_Endian_Unpack at sparknacl-utils.ads:20 flow analyzed (0 errors, 0 checks and 0 warnings)
+  SPARKNaCl.Utils.Broadcast_Bit_To_Byte at sparknacl-utils.ads:33 flow analyzed (0 errors, 0 checks and 0 warnings)
+  SPARKNaCl.Utils.CSwap16 at sparknacl-utils.ads:44 flow analyzed (0 errors, 0 checks and 0 warnings)
+   suppressed messages:
+    sparknacl-utils.adb:146:7: 
+    sparknacl-utils.adb:147:7: 
+  SPARKNaCl.Utils.CSwap32 at sparknacl-utils.adb:82 flow analyzed (0 errors, 0 checks and 0 warnings)
+   suppressed messages:
+    sparknacl-utils.adb:220:7: 
+  SPARKNaCl.Utils.CSwapI32 at sparknacl-utils.adb:71 flow analyzed (0 errors, 0 checks and 0 warnings)
+   suppressed messages:
+    sparknacl-utils.adb:194:7: 
+  SPARKNaCl.Utils.Inv_25519 at sparknacl-utils.ads:58 flow analyzed (0 errors, 0 checks and 0 warnings)
+  SPARKNaCl.Utils.Little_Endian_Unpack at sparknacl-utils.ads:15 flow analyzed (0 errors, 0 checks and 0 warnings)
+  SPARKNaCl.Utils.Pack_25519 at sparknacl-utils.ads:54 flow analyzed (0 errors, 0 checks and 0 warnings)
+   suppressed messages:
+    sparknacl-utils.adb:386:7: 
+    sparknacl-utils.adb:387:7: 
+    sparknacl-utils.adb:388:7: 
+    sparknacl-utils.adb:389:7: 
+  SPARKNaCl.Utils.Pack_25519.Subtract_P at sparknacl-utils.adb:261 flow analyzed (0 errors, 0 checks and 0 warnings)
+   suppressed messages:
+    sparknacl-utils.adb:335:10: 
+  SPARKNaCl.Utils.Pack_25519.Temp_Gfpredicate at sparknacl-utils.adb:232 flow analyzed (0 errors, 0 checks and 0 warnings)
+  SPARKNaCl.Utils.Pack_25519.To_Bytes_32 at sparknacl-utils.adb:269 flow analyzed (0 errors, 0 checks and 0 warnings)
+  SPARKNaCl.Utils.Pack_25519.To_Normal_GF32 at sparknacl-utils.adb:238 flow analyzed (0 errors, 0 checks and 0 warnings)
+  SPARKNaCl.Utils.To_I32gp2075 at sparknacl-utils.adb:69 flow analyzed (0 errors, 0 checks and 0 warnings)
+  SPARKNaCl.Utils.To_I32gp2075.To_I32 at sparknacl-utils.adb:69 skipped
+  SPARKNaCl.Utils.To_U32gp2011 at sparknacl-utils.adb:68 flow analyzed (0 errors, 0 checks and 0 warnings)
+  SPARKNaCl.Utils.To_U32gp2011.To_U32 at sparknacl-utils.adb:68 skipped
+  SPARKNaCl.Utils.Unpack_25519 at sparknacl-utils.ads:62 flow analyzed (0 errors, 0 checks and 0 warnings)

@@ -1,0 +1,36 @@
+with "xmlada.gpr";
+with "libadalang.gpr";
+with "gnatcoll.gpr";
+with "aws.gpr";
+
+project Hashing is
+
+   for Languages use ("Ada", "C");
+   for Source_Dirs use ("src");
+   for Object_Dir use "obj";
+   for Exec_Dir use "bin";
+   for Main use ("main.adb");
+   for Source_Files use ("main.adb", "bech32.c", "fetch_bitcoin_info.ads",
+                         "fetch_bitcoin_info.adb", "fetch_nostr_info.adb",
+                         "fetch_nostr_info.ads", "bitcoin.ads",
+                         "bitcoin.adb");
+
+   package Builder is
+      for Default_Switches ("ada") use ("-g", "-gnat2022", "-k", "-C");
+      for Default_Switches ("c") use ("-g");
+   end Builder;
+
+   package Compiler is
+      for Switches ("c") use ("-O3");
+      for Switches ("ada") use ("-g");
+   end Compiler;
+
+   package Linker is
+      for Switches ("c") use ("-g");
+      for Switches ("ada") use ("-g");
+   end Linker;
+
+   -- Additional configuration as needed for dependencies
+
+end Hashing;
+

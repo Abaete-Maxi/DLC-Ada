@@ -1,0 +1,4 @@
+bitcoin_types.adb:10:20: error: "Decimal_IO" not declared in "Text_IO"
+bitcoin_types.adb:11:31: error: "Decimal" not declared in "Editing"
+bitcoin_types.adb:11:44: error: incorrect use of "Decimal"
+bitcoin_types.adb:17:18: error: "Decimal_IO" not declared in "Text_IO"

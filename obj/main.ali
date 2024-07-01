@@ -1,0 +1,365 @@
+V "GNAT Lib v2021"
+M P W=b
+A -gnatA
+A -g
+A -gnat2022
+A -g
+A -mtune=generic
+A -march=x86-64
+P SS ZX
+
+RN
+RV NO_CALENDAR
+RV NO_DELAY
+RV NO_DISPATCHING_CALLS
+RV NO_EXCEPTION_HANDLERS
+RV NO_EXCEPTION_PROPAGATION
+RV NO_EXCEPTIONS
+RV NO_FLOATING_POINT
+RV NO_IO
+RV NO_IMPLICIT_CONDITIONALS
+RV NO_LOCAL_ALLOCATORS
+RV NO_NESTED_FINALIZATION
+RV NO_SECONDARY_STACK
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_DEFAULT_INITIALIZATION
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV STATIC_DISPATCH_TABLES
+
+U main%b		main.adb		5b25739a NE OO SU
+W ada%s			ada.ads			ada.ali
+W ada.calendar%s	a-calend.adb		a-calend.ali
+W ada.calendar.formatting%s  a-calfor.adb	a-calfor.ali
+W ada.command_line%s	a-comlin.adb		a-comlin.ali
+Z ada.exceptions%s	a-except.adb		a-except.ali
+W ada.integer_text_io%s	a-inteio.ads		a-inteio.ali
+W ada.streams%s		a-stream.adb		a-stream.ali
+W ada.strings%s		a-string.ads		a-string.ali
+W ada.strings.fixed%s	a-strfix.adb		a-strfix.ali
+Z ada.strings.text_buffers%s  a-sttebu.adb	a-sttebu.ali
+W ada.strings.unbounded%s  a-strunb.adb		a-strunb.ali
+Z ada.tags%s		a-tags.adb		a-tags.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+W bitcoin%s		bitcoin.adb		bitcoin.ali
+W fetch_bitcoin_info%s	fetch_bitcoin_info.adb	fetch_bitcoin_info.ali
+W fetch_nostr_info%s	fetch_nostr_info.adb	fetch_nostr_info.ali
+W gnat%s		gnat.ads		gnat.ali
+W gnat.io%s		g-io.adb		g-io.ali
+W gnat.os_lib%s		g-os_lib.ads		g-os_lib.ali
+W gnat.sha256%s		g-sha256.ads		g-sha256.ali
+W interfaces%s		interfac.ads		interfac.ali
+Z system%s		system.ads		system.ali
+Z system.address_image%s  s-addima.adb		s-addima.ali
+Z system.concat_2%s	s-conca2.adb		s-conca2.ali
+Z system.concat_3%s	s-conca3.adb		s-conca3.ali
+Z system.concat_4%s	s-conca4.adb		s-conca4.ali
+Z system.put_images%s	s-putima.adb		s-putima.ali
+Z system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+Z system.soft_links%s	s-soflin.adb		s-soflin.ali
+Z system.standard_library%s  s-stalib.adb	s-stalib.ali
+Z system.strings.stream_ops%s  s-ststop.adb	s-ststop.ali
+Z system.val_flt%s	s-valflt.ads		s-valflt.ali
+Z system.val_int%s	s-valint.ads		s-valint.ali
+
+D ada.ads		20210520051132 76789da1 ada%s
+D a-calend.ads		20210520051128 474d9720 ada.calendar%s
+D a-calfor.ads		20210520051128 0f4707d1 ada.calendar.formatting%s
+D a-catizo.ads		20210520051128 eaa56756 ada.calendar.time_zones%s
+D a-charac.ads		20210520051128 2d3ec45b ada.characters%s
+D a-chlat1.ads		20210520051128 66457d31 ada.characters.latin_1%s
+D a-comlin.ads		20210520051128 4aa66568 ada.command_line%s
+D a-except.ads		20210520051128 946f3014 ada.exceptions%s
+D a-finali.ads		20210520051128 bf4f806b ada.finalization%s
+D a-inteio.ads		20210520051128 f64b89a4 ada.integer_text_io%s
+D a-ioexce.ads		20210520051128 e4a01f64 ada.io_exceptions%s
+D a-stream.ads		20210520051130 119b8fb3 ada.streams%s
+D a-string.ads		20210520051130 90ac6797 ada.strings%s
+D a-strfix.ads		20210520051130 aeacf44c ada.strings.fixed%s
+D a-strmap.ads		20210520051130 5a88892a ada.strings.maps%s
+D a-sttebu.ads		20210520051130 18209c64 ada.strings.text_buffers%s
+D a-strunb.ads		20210520051130 03325227 ada.strings.unbounded%s
+D a-stuten.ads		20210520051130 808c40ad ada.strings.utf_encoding%s
+D a-tags.ads		20210520051130 9eaa38c6 ada.tags%s
+D a-textio.ads		20210520051130 aef4d56d ada.text_io%s
+D a-tiinio.ads		20210520051130 390edddb ada.text_io.integer_io%s
+D a-unccon.ads		20210520051130 0e9b276f ada.unchecked_conversion%s
+D a-uncdea.ads		20210520051130 c3a8ac65 ada.unchecked_deallocation%s
+D bitcoin.ads		20240630202604 5be9bb28 bitcoin%s
+D fetch_bitcoin_info.ads  20240626205048 15876f21 fetch_bitcoin_info%s
+D fetch_nostr_info.ads	20240628131718 ef5e3394 fetch_nostr_info%s
+D gnat.ads		20210520051132 b5988c27 gnat%s
+D g-bytswa.ads		20210520051132 a4d21639 gnat.byte_swapping%s
+D g-io.ads		20210520051132 9f0d3ab2 gnat.io%s
+D g-os_lib.ads		20210520051132 0db74523 gnat.os_lib%s
+D g-sechas.ads		20210520051132 302163b5 gnat.secure_hashes%s
+D g-shsh32.ads		20210520051132 671c9849 gnat.secure_hashes.sha2_32%s
+D g-shshco.ads		20210520051132 1144502c gnat.secure_hashes.sha2_common%s
+D g-sha256.ads		20210520051132 c083f050 gnat.sha256%s
+D interfac.ads		20210520051132 edec285f interfaces%s
+D i-cstrea.ads		20210520051132 e53d8b8e interfaces.c_streams%s
+D main.adb		20240630204140 a3d6b311 main%b
+D system.ads		20210520051136 2ffa5114 system%s
+D s-addima.ads		20210520051132 a1ec9d3a system.address_image%s
+D s-atocou.ads		20210520051132 b45c2d8d system.atomic_counters%s
+D s-conca2.ads		20210520051132 02a0d7d0 system.concat_2%s
+D s-conca3.ads		20210520051132 0b705ca5 system.concat_3%s
+D s-conca4.ads		20210520051132 7e642b20 system.concat_4%s
+D s-crtl.ads		20210520051132 0ebbdb71 system.crtl%s
+D s-exctab.ads		20210520051132 54135002 system.exception_table%s
+D s-ficobl.ads		20210520051132 078245e4 system.file_control_block%s
+D s-finroo.ads		20210520051132 4ff27390 system.finalization_root%s
+D s-memory.ads		20210520051134 597d6634 system.memory%s
+D s-os_lib.ads		20210520051134 93b69309 system.os_lib%s
+D s-parame.ads		20210520051134 4752c4cb system.parameters%s
+D s-powflt.ads		20210520051134 46f7a1b9 system.powten_flt%s
+D s-putima.ads		20210520051134 4e095881 system.put_images%s
+D s-secsta.ads		20210520051134 9b3ab94b system.secondary_stack%s
+D s-soflin.ads		20210520051134 a7318a92 system.soft_links%s
+D s-stache.ads		20210520051134 a37c21ec system.stack_checking%s
+D s-stalib.ads		20210520051134 472fbca8 system.standard_library%s
+D s-stalib.adb		20210520051134 977290bf system.standard_library%b
+D s-stoele.ads		20210520051134 2dc34a04 system.storage_elements%s
+D s-stoele.adb		20210520051134 ed88f8fb system.storage_elements%b
+D s-stratt.ads		20210520051134 7bdda3fa system.stream_attributes%s
+D s-string.ads		20210520051134 8fe54fb7 system.strings%s
+D s-ststop.ads		20210520051134 5fbf1b38 system.strings.stream_ops%s
+D s-traent.ads		20210520051134 26a8d361 system.traceback_entries%s
+D s-unstyp.ads		20210520051134 2b077493 system.unsigned_types%s
+D s-valflt.ads		20210520051134 d738ba7d system.val_flt%s
+D s-valint.ads		20210520051134 e7fcadb7 system.val_int%s
+D s-valrea.ads		20210520051134 8ddc6624 system.val_real%s
+D s-valuns.ads		20210520051134 dac7b45d system.val_uns%s
+D s-valuei.ads		20210520051134 978dd0a6 system.value_i%s
+D s-valueu.ads		20210520051134 7b8fccf5 system.value_u%s
+D s-wchcon.ads		20210520051136 1b7d22d2 system.wch_con%s
+D unchconv.ads		20210520051136 ca2f9e18 unchecked_conversion%s
+G a e
+G c Z b b [main standard 21 11 none]
+G r c none [main standard 21 11 none] [fetch_bitcoin_info fetch_bitcoin_info 4 14 none]
+G r c none [main standard 21 11 none] [to_sats bitcoin 5 13 none]
+G r c none [main standard 21 11 none] [sats_to_btc_string bitcoin 9 13 none]
+G r c none [main standard 21 11 none] [fetch_oracle_decision fetch_nostr_info 4 14 none]
+X 1 ada.ads
+16K9*Ada 20e8 37|1r6 1r35 4r6 4r35 5r6 5r35 6r6 6r35 7r6 7r35 8r6 9r6 9r35
+. 10r6 10r35 24r29 95r22 99r12 154r26 158r33 159r33 165r25 172r25 176r15
+. 228r25 233r15 449r17
+X 2 a-calend.ads
+36K13*Calendar 413e17 37|6w10 6r39 7r10 7r39
+42I9*Time<226I9> 37|265r13
+56V13*Clock{42I9} 37|265s21
+226I9 Time_Rep<long_long_integer>
+X 3 a-calfor.ads
+24K22*Formatting 223e28 37|7w19 7r48
+176V13*Image{string} 37|267s42
+X 7 a-comlin.ads
+36K13*Command_Line 144e21 37|8w10
+X 10 a-inteio.ads
+18K13*Integer_Text_IO[21|46] 37|9w10 9r39
+X 12 a-stream.ads
+36K13*Streams 87e16 37|4w10 4r39 24r33 95r26 99r16 165r29 172r29 176r19 228r29
+. 233r19
+42M9*Stream_Element 37|99r24 176r27 233r27
+44I9*Stream_Element_Offset<long_long_integer> 37|24r41
+54A9*Stream_Element_Array(42M9)<44I9> 37|95r34 165r37 172r37 228r37
+X 13 a-string.ads
+16K13*Strings 35e16 37|5r10 5r39 10r10 10r39 154r30 158r37 159r37
+X 14 a-strfix.ads
+43K21*Fixed 1398e22 37|10w18 10r47
+X 17 a-strunb.ads
+83K21*Unbounded 765e26 37|5w18 5r47 154r38 158r45 159r45
+88R9*Unbounded_String<9|43R9> 744e15 37|28r17 46r14 154r48 284r18 292r18
+. 335r50
+104V13*To_Unbounded_String{88R9} 37|304s15 410s17
+117V13*To_String{string} 37|158s55 159s55 287s39 342s29 342s59 378s39 393s39
+. 432s7 435s7
+X 20 a-textio.ads
+58K13*Text_IO 725e16 37|1w10 1r39 449r21
+65P9*File_Type
+175V13*Standard_Input{65P9} 37|303s25 308s18 317s18
+262U14*New_Line 37|430s4
+469U14*Get_Line 37|303s7 307s7 316s7
+470p7 File{65P9} 37|303r17 308r10 317r10
+471a7 Item{string} 37|303r41 308r34 317r34
+472i7 Last{natural} 37|303r61 308r56 317r56
+493V13*Get_Line{string} 37|449s29
+506U14*Put_Line 37|254s13 267s7 278s13 287s7 302s7 306s7 315s7 338s7 340s7
+. 341s7 343s7 346s7 349s7 359s4 362s4 365s4 368s4 370s4 371s4 376s4 378s4
+. 379s4 382s4 385s4 391s4 393s4 394s4 397s4 400s4 403s4 412s4 416s7 418s7
+. 420s7 427s4 429s4 431s4 434s4 437s4 440s4 443s4 445s4
+546X4*Data_Error 37|325r34
+X 24 bitcoin.ads
+1K9*Bitcoin 11e12 37|15w6 15r35 323r20
+3I9*SATs<integer> 37|30r17 37r22 38r22 292r73 327r23
+5V13*To_SATs{3I9} 37|323s28
+9V13*SATs_To_BTC_String{string} 37|345s10 384s7 399s7 433s7 436s7
+X 25 fetch_bitcoin_info.ads
+3K9*Fetch_Bitcoin_Info 6e23 37|13w6 13r35 275r10
+4U14*Fetch_Bitcoin_Info 37|275s29
+X 26 fetch_nostr_info.ads
+3K9*Fetch_Nostr_Info 6e21 37|14w6 14r35 286r7
+4U14*Fetch_Oracle_Decision 37|286s24
+X 27 gnat.ads
+34K9*GNAT 57e9 37|2r6 2r35 11r6 12r6 12r35 93r22 93r45 94r22 102r7 103r17
+. 166r15 170r25 170r48 171r25 179r10 180r20 227r25 227r48 236r10 237r29
+X 29 g-io.ads
+41K14*IO 91e12 37|11w11
+X 30 g-os_lib.ads
+51K14*OS_Lib=51:36 37|12w11 12r40
+X 31 g-sechas.ads
+134R12*Context 37|93r34[34|43] 170r37[34|43] 227r37[34|43]
+143r7*Initial_Context{134R12[34|43]} 37|93r57[34|43] 170r60[34|43] 227r60[34|43]
+152U17*Update 37|102s19[34|43] 179s22[34|43] 236s22[34|43]
+161i7*Hash_Length{12|44I9} 37|166r27[34|43]
+163A15*Binary_Message_Digest{12|54A9}<12|44I9> 37|94r34[34|43] 171r37[34|43]
+167V16*Digest{163A15[34|43]} 37|103s29[34|43] 180s32[34|43] 237s41[34|43]
+X 34 g-sha256.ads
+43K14*SHA256[31|126] 37|2w11 2r40 93r27 93r50 94r27 102r12 103r22 166r20
+. 170r30 170r53 171r30 179r15 180r25 227r30 227r53 236r15 237r34
+X 35 interfac.ads
+38K9*Interfaces 231e15 37|3w6 3r35 23r50 60r24 69r24 74r25 109r27 187r18
+. 201r15 214r15 246r15
+68M9*Unsigned_8 37|23r61 60r35 69r35 74r36 109r38 187r29 201r26 214r26 246r26
+X 37 main.adb
+21U11*Main 21b11 452l5 452t9
+23A9 Byte_Seq(35|68M9)<integer> 29r17 36r22 56r64 57r16 65r54 66r16 82r45
+. 92r36 92r53 106r19 155r26 155r55 164r25 169r39 169r56 183r22 242r28 292r50
+24I12 Stream_Offset{12|44I9} 98r24 109r58 175r27 187r49 232r27 246r55
+27R9 Participant 31e14 33r19
+28r7 Name{17|88R9} 375m13 378r56 390m13 393r56 405r13 405r25 408r56 408r68
+. 432r24 435r24
+29a7 Pub_Key{23A9} 375m25 381r37 390m25 396r37 405r37 405r52
+30i7 Balance{24|3I9} 424m13 425m13 433r33 436r33
+33r4 Name1{27R9} 375m7 375r7 375m19 375r19 378r50 381r31 405r7 405r31 408r50
+. 424m7 432r18 433r27
+33r11 Name2{27R9} 390m7 390r7 390m19 390r19 393r50 396r31 405r19 405r46 408r62
+. 425m7 435r18 436r27
+35R9 Contract 40e14 42r25 49r52 335r22
+36a7 Multi_Sig_PK{23A9} 348r44 406m26
+37i7 Amount1{24|3I9} 345r40 375m53 384r46 424r43
+38i7 Amount2{24|3I9} 345r60 390m53 399r46 424r72
+39b7 Released{boolean} 51m9 415r26 423r26
+42r4 Multi_Sig_Contract{35R9} 375m34 375r34 384r27 390m34 390r34 399r27 406m7
+. 406r7 408r30 411m25 411r25 415r7 423r7 424r24 424r53
+45R9 Oracle 47e14 49r33 54r11
+46r7 Name{17|88R9} 410m9
+49U14 Make_Decision 49b14 49>29 49=41 52l8 52t21 411s4
+49r29 O{45R9}
+49r41 C{35R9} 51m7
+54r4 Orac{45R9} 410m4 411r19
+56V13 Bitcoin_Address_To_Bytes{23A9} 56b13 56>39 63l8 63t32 310s21
+56a39 Address{string} 57r31 60r62
+57a7 Result{23A9} 59r16 60m10 62r14
+59i11 I{integer} 60r18 60r71
+65V13 String_To_Byte_Seq{23A9} 65b13 65>33 72l8 72t26
+65a33 Str{string} 66r31 69r62
+66a7 Result{23A9} 68r16 69m10 71r14
+68i11 I{integer} 69r18 69r67
+74V13 To_Hex{string} 74b13 74>21 80l8 80t14 86s57
+74m21 B{35|68M9} 78r38 79r38
+75a7 Hex_Characters{string} 78r9 79r9
+82V13 Byte_Seq_To_Hex_String{string} 82b13 82>37 89l8 89t30 251s36 348s10
+. 381s7 396s7
+82a37 Bytes{23A9} 83r29 85r16 86r65
+83a7 Result{string} 86m10 88r14
+85i11 I{integer} 86r23 86r42 86r72
+92V13 Hash_Byte_Seq{23A9} 92b13 92>28 113l8 113t21
+92a28 Input{23A9} 95r61 97r16 99r40
+93r7 Context{31|134R12[34|43]} 102m27 102r27 103r37
+94a7 Hashed{31|163A15[34|43]} 103m7 106r34 109r50
+95a7 Input_Stream{12|54A9} 98m10 102r36
+97i11 I{integer} 98r39 99r47
+106a10 Result{23A9} 108r19 109m13 111r17
+108i14 J{integer} 109r21 109r73
+115U14*Encode_Bech32 116>7 116>21 116>39 116<57 117b<c,encode_bech32>22 132s7
+. 253s13
+116a7 HRP{string}
+116i21 Witver{integer}
+116a39 Witprog{string}
+116a57 Result{string}
+119U14*Decode_Bech32 120>7 120<22 120<48 121<7 122b<c,decode_bech32>22 145s7
+120a7 Bech{string}
+120a22 Decoded_HRP{string}
+120i48 Decoded_Witver{integer}
+121a7 Decoded_Witprog{string}
+124U14 Encode_Bech32_Address 124b14 125>7 125>21 125>39 125<57 133l8 133t29
+125a7 HRP{string} 130r25
+125i21 Witver{integer} 132r34
+125a39 Witprog{string} 131r25
+125a57 Result{string} 132m58
+127a7 Python_HRP{string} 130m7 132r22
+128a7 Python_Witprog{string} 131m7 132r42
+135U14 Decode_Bech32_Address 135b14 136>7 136<22 136<48 137<7 151l8 151t29
+136a7 Bech{string} 144r22
+136a22 Decoded_HRP{string} 148m7
+136i48 Decoded_Witver{integer} 149m7
+137a7 Decoded_Witprog{string} 150m7
+139a7 Python_Bech{string} 144m7 146r10
+140a7 Python_Decoded_HRP{string} 146m23 148r26
+141i7 Python_Decoded_Witver{integer} 146m43 149r26
+142a7 Python_Decoded_Witprog{string} 147m10 150r26
+153U14 Create_Multi_Sig_Contract 153b14 154>7 154>14 155>7 155>16 155<36
+. 261l8 261t33 404s4
+154r7 Name1{17|88R9} 158r66
+154r14 Name2{17|88R9} 159r66
+155a7 PubKey1{23A9} 163r23 206r19 207r34
+155a16 PubKey2{23A9} 163r54 219r19 220r34
+155a36 Multi_Sig_PK{23A9} 258m10
+158a7 Str1{string} 163r9 199r19 201r53
+159a7 Str2{string} 163r40 212r19 214r53
+162i7 Combined_Length{positive} 164r40
+164a7 Combined{23A9} 200m13 207m13 213m13 220m13 229r18 231r19 233r43
+165a7 Hashed_Combined{12|54A9} 237m10 242r43 246r38
+167a7 Bech32_Result{string} 253m49 254r28
+169V16 Hash_Byte_Seq{23A9} 169b16 169>31 191l11 191t24
+169a31 Input{23A9} 172r64 174r19 176r43
+170r10 Context{31|134R12[34|43]} 179m30 179r30 180r40
+171a10 Hashed{31|163A15[34|43]} 180m10 183r37 187r41
+172a10 Input_Stream{12|54A9} 175m13 179r39
+174i14 I{integer} 175r42 176r50
+183a13 Result{23A9} 185r22 186m16 189r20
+185i17 J{integer} 186r24 187r64
+196i10 Offset{positive} 200r23 202m13 202r23 207r23 208m13 208r34 213r23
+. 215m13 215r23 220r23 221m13 221r34
+199i14 I{integer} 201r59
+206i14 I{integer} 207r43
+212i14 I{integer} 214r59
+219i14 I{integer} 220r43
+227r10 Context{31|134R12[34|43]} 236m30 236r30 237r49
+228a10 Input_Stream{12|54A9} 232m13 236r39
+231i14 I{integer} 232r42 233r53
+242a10 Hashed_Byte_Seq{23A9} 244r19 245m13 251r60 258r26
+244i14 J{integer} 245r30 246r70
+251a13 Hashed_Hex{string} 253r37
+264U14 Display_Current_Time 264b14 268l8 268t28 361s4 442s4
+265i7 Now{2|42I9} 267r49
+270U14 Get_Bitcoin_Info 270b14 280l8 280t24 364s4 439s4
+271i7 Bitcoin_Price{integer} 275m49
+272i7 Block_Height{integer} 275m64
+283U14 Get_Oracle_Decision 283b14 288l8 288t27 414s4
+284r7 Decision{17|88R9} 286m47 287r50
+291U14 Get_Participant_Details 291b14 292<7 292<36 292<60 329l8 329t31 374s4
+. 389s4
+292r7 Name{17|88R9} 304m7
+292a36 Pub_Key{23A9} 310m10
+292i60 Amount{24|3I9} 323m10 327m13
+294a7 Input_Name{string} 303m49 304r36
+295i7 Last_Name{natural} 303m69 304r53
+296a7 Input_PubKey{string} 308m42 310r47
+297i7 Last_PubKey{natural} 308m64 309r10 309r35 310r66
+298a7 Input_Amount{string} 317m42 321r37 327r35
+299i7 Last_Amount{natural} 317m64 321r56 327r54
+300f7 BTC_Amount{float} 321m10 323r37
+334U14 Display_Contract_Details 334b14 335>7 335>32 335>39 351l8 351t32 408s4
+335r7 Contract1{35R9} 345r30 345r50 348r34
+335r32 Name1{17|88R9} 342r40
+335r39 Name2{17|88R9} 342r70
+X 38 system.ads
+67M9*Address
+X 48 s-memory.ads
+53V13*Alloc{38|67M9} 103i<c,__gnat_malloc>22
+68U14*Free 104i<c,__gnat_free>22
+76V13*Realloc{38|67M9} 105i<c,__gnat_realloc>22
+X 57 s-stalib.adb
+89U14 Break_Start 90i<c,__gnat_break_start>22
+

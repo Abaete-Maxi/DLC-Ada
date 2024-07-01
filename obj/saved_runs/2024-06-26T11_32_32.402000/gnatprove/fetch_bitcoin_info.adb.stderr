@@ -1,0 +1,2 @@
+fetch_bitcoin_info.adb:34:13: warning: "out" parameter "Bitcoin_Price" not set before return [-gnatwv]
+fetch_bitcoin_info.adb:34:13: warning: "out" parameter "Block_Height" not set before return [-gnatwv]

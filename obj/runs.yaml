@@ -1,0 +1,44 @@
+'2024-06-26T11:31:09.934000':
+  category: GNATprove
+  files:
+  - C:\Projects\hashingtest\obj\gnatprove
+  label: Examine All
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    Phase 2 of 2: analysis of data and information flow ...
+
+    fetch_bitcoin_info.adb:34:13: warning: "out" parameter "Bitcoin_Price" not set
+    before return [-gnatwv]
+
+    fetch_bitcoin_info.adb:34:13: warning: "out" parameter "Block_Height" not set
+    before return [-gnatwv]
+
+    warning: no bodies have been analyzed by GNATprove
+
+    enable analysis of a non-generic body using SPARK_Mode
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2024-06-26T11:31:09.934000'
+'2024-06-26T11:32:32.402000':
+  category: GNATprove
+  files:
+  - C:\Projects\hashingtest\obj\gnatprove
+  label: Examine Subprogram
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    Phase 2 of 2: analysis of data and information flow ...
+
+    fetch_bitcoin_info.adb:34:13: warning: "out" parameter "Bitcoin_Price" not set
+    before return [-gnatwv]
+
+    fetch_bitcoin_info.adb:34:13: warning: "out" parameter "Block_Height" not set
+    before return [-gnatwv]
+
+    warning: no bodies have been analyzed by GNATprove
+
+    enable analysis of a non-generic body using SPARK_Mode
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2024-06-26T11:32:32.402000'

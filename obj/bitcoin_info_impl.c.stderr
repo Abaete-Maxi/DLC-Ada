@@ -1,0 +1,4 @@
+C:\Projects\hashingtest\src\bitcoin_info_impl.c:1:10: fatal error: curl/curl.h: No such file or directory
+    1 | #include <curl/curl.h>
+      |          ^~~~~~~~~~~~~
+compilation terminated.

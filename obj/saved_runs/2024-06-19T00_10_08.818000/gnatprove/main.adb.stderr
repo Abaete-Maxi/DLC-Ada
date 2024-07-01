@@ -1,0 +1,2 @@
+main.adb:6:11: info: SPARK_Mode not applied to this compilation unit
+main.adb:6:11: info: only enclosed declarations with SPARK_Mode will be analyzed

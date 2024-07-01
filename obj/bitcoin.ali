@@ -1,0 +1,111 @@
+V "GNAT Lib v2021"
+A -gnatA
+A -g
+A -gnat2022
+A -g
+A -mtune=generic
+A -march=x86-64
+P SS ZX
+
+RN
+RV NO_FLOATING_POINT
+RV NO_SECONDARY_STACK
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_PRAGMAS
+
+U bitcoin%b		bitcoin.adb		b1306c3f NE OO PK
+W ada%s			ada.ads			ada.ali
+W ada.float_text_io%s	a-flteio.ads		a-flteio.ali
+W ada.strings%s		a-string.ads		a-string.ali
+W ada.strings.fixed%s	a-strfix.adb		a-strfix.ali
+Z ada.strings.text_buffers%s  a-sttebu.adb	a-sttebu.ali
+W ada.strings.unbounded%s  a-strunb.adb		a-strunb.ali
+Z system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+
+U bitcoin%s		bitcoin.ads		5be9bb28 EE NE OO PK
+Z ada.strings.text_buffers%s  a-sttebu.adb	a-sttebu.ali
+
+D ada.ads		20210520051132 76789da1 ada%s
+D a-charac.ads		20210520051128 2d3ec45b ada.characters%s
+D a-chlat1.ads		20210520051128 66457d31 ada.characters.latin_1%s
+D a-except.ads		20210520051128 946f3014 ada.exceptions%s
+D a-finali.ads		20210520051128 bf4f806b ada.finalization%s
+D a-flteio.ads		20210520051128 e18a47a0 ada.float_text_io%s
+D a-ioexce.ads		20210520051128 e4a01f64 ada.io_exceptions%s
+D a-stream.ads		20210520051130 119b8fb3 ada.streams%s
+D a-string.ads		20210520051130 90ac6797 ada.strings%s
+D a-strfix.ads		20210520051130 aeacf44c ada.strings.fixed%s
+D a-strmap.ads		20210520051130 5a88892a ada.strings.maps%s
+D a-sttebu.ads		20210520051130 18209c64 ada.strings.text_buffers%s
+D a-strunb.ads		20210520051130 03325227 ada.strings.unbounded%s
+D a-stuten.ads		20210520051130 808c40ad ada.strings.utf_encoding%s
+D a-tags.ads		20210520051130 9eaa38c6 ada.tags%s
+D a-textio.ads		20210520051130 aef4d56d ada.text_io%s
+D a-tiflio.ads		20210520051130 fcca4daa ada.text_io.float_io%s
+D a-unccon.ads		20210520051130 0e9b276f ada.unchecked_conversion%s
+D bitcoin.ads		20240630202604 5be9bb28 bitcoin%s
+D bitcoin.adb		20240630203458 a6cd36dc bitcoin%b
+D interfac.ads		20210520051132 edec285f interfaces%s
+D i-cstrea.ads		20210520051132 e53d8b8e interfaces.c_streams%s
+D system.ads		20210520051136 2ffa5114 system%s
+D s-atocou.ads		20210520051132 b45c2d8d system.atomic_counters%s
+D s-crtl.ads		20210520051132 0ebbdb71 system.crtl%s
+D s-exctab.ads		20210520051132 54135002 system.exception_table%s
+D s-ficobl.ads		20210520051132 078245e4 system.file_control_block%s
+D s-finroo.ads		20210520051132 4ff27390 system.finalization_root%s
+D s-parame.ads		20210520051134 4752c4cb system.parameters%s
+D s-putima.ads		20210520051134 4e095881 system.put_images%s
+D s-secsta.ads		20210520051134 9b3ab94b system.secondary_stack%s
+D s-soflin.ads		20210520051134 a7318a92 system.soft_links%s
+D s-stache.ads		20210520051134 a37c21ec system.stack_checking%s
+D s-stalib.ads		20210520051134 472fbca8 system.standard_library%s
+D s-stoele.ads		20210520051134 2dc34a04 system.storage_elements%s
+D s-stoele.adb		20210520051134 ed88f8fb system.storage_elements%b
+D s-stratt.ads		20210520051134 7bdda3fa system.stream_attributes%s
+D s-traent.ads		20210520051134 26a8d361 system.traceback_entries%s
+D s-unstyp.ads		20210520051134 2b077493 system.unsigned_types%s
+D s-wchcon.ads		20210520051136 1b7d22d2 system.wch_con%s
+D unchconv.ads		20210520051136 ca2f9e18 unchecked_conversion%s
+G a e
+G c Z s b [to_sats bitcoin 5 13 none]
+G c Z s b [to_btc bitcoin 7 13 none]
+G c Z s b [sats_to_btc_string bitcoin 9 13 none]
+G c Z b b [sats_to_string bitcoin 16 13 none]
+X 1 ada.ads
+16K9*Ada 20e8 20|1r6 2r6 3r6 21r7 22r14 22r43 29r22
+X 6 a-flteio.ads
+20K13*Float_Text_IO[17|46] 20|1w10 21r11
+X 9 a-string.ads
+16K13*Strings 35e16 20|2r10 3r10 22r18 22r47 29r26
+33n37*Both{33E9} 20|22r55
+X 10 a-strfix.ads
+43K21*Fixed 1398e22 20|2w18 22r26 29r34
+237V13*Index{natural} 20|29s40
+1097V13*Trim{string} 20|22s32
+X 13 a-strunb.ads
+83K21*Unbounded 765e26 20|3w18
+X 16 a-textio.ads
+87I12*Field{integer}
+X 17 a-tiflio.ads
+100U14*Put 20|21s25[6|20]
+103i7 Aft{16|87I12} 20|21r47[6|20]
+104i7 Exp{16|87I12} 20|21r57[6|20]
+X 19 bitcoin.ads
+1K9*Bitcoin 11l5 11e12 20|4b14 37l5 37t12
+3I9*SATs<integer> 5r49 7r34 9r46 20|6r49 8r14 11r34 16r42 25r46
+5V13*To_SATs{3I9} 5>22 20|6b13 9l8 9t15
+5f22 BTC_Amount{float} 20|6b22 8r20
+7V13*To_BTC{float} 7>21 20|11b13 14l8 14t14 17s29
+7i21 Sats_Value{3I9} 20|11b21 13r21
+9V13*SATs_To_BTC_String{string} 9>33 20|25b13 35l8 35t26
+9i33 Sats_Value{3I9} 20|25b33 26r47
+X 20 bitcoin.adb
+16V13 SATs_To_String{string} 16b13 16>29 23l8 23t22 26s31
+16i29 Sats_Value{19|3I9} 17r37
+17f7 Btc_Amount{float} 21r35
+18a7 Str{string} 21m30 22r38
+19i7 Last{natural}
+26a7 Str{string} 29r47 31r17 33r17 33r22
+27i7 Space_Index{natural} 29m7 30r10 33r35
+

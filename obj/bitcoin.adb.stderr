@@ -1,0 +1,1 @@
+bitcoin.adb:19:07: warning: variable "Last" is never read and never assigned [-gnatwv]

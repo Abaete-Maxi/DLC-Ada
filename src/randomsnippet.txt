@@ -1,0 +1,79 @@
+package Bitcoin_Types is
+
+subtype Satoshis is Ada.Decimal.Decimal64;
+
+function To_String(Sats : Satoshis) return String;
+function From_String(Str : String) return Satoshis;
+
+Satoshis_Zero : constant Satoshis := Ada.Decimal.Zero;
+
+end Bitcoin_Types;
+
+package body Bitcoin_Types is
+
+function To_String(Sats : Satoshis) return String is
+begin
+return Ada.Text_IO.Decimal_IO.Decimal_Output(Sats);
+end To_String;
+
+function From_String(Str : String) return Satoshis is
+Sats : Satoshis;
+begin
+Ada.Text_IO.Decimal_IO.Decimal_Input(Str, Sats);
+return Sats;
+exception
+when others =>
+raise Constraint_Error;
+end From_String;
+
+end Bitcoin_Types;
+
+with Bitcoin_Types;
+
+procedure Main is
+
+package BTC renames Bitcoin_Types;
+
+type Participant is record
+Name : Unbounded_String;
+Pub_Key : Byte_Seq (1..42);
+Balance : BTC.Satoshis := BTC.Satoshis_Zero;
+end record;
+
+type Contract is record
+Multi_Sig_PK : Byte_Seq (1..32);
+Amount1 : BTC.Satoshis := BTC.Satoshis_Zero;
+Amount2 : BTC.Satoshis := BTC.Satoshis_Zero;
+Released : Boolean := False;
+end record;
+
+Name1, Name2 : Participant;
+Multi_Sig_Contract : Contract;
+
+procedure Get_Participant_Details is
+begin
+...
+declare
+Amount_Str : String := Input_Amount(1..Last_Amount);
+begin
+Amount := BTC.From_String(Amount_Str);
+exception
+when Constraint_Error =>
+Put_Line("Invalid amount");
+Amount := BTC.Satoshis_Zero;
+end;
+end Get_Participant_Details;
+
+...
+
+begin
+
+...
+
+Get_Participant_Details(...);
+
+Put_Line("Amount entered: " & BTC.To_String(Multi_Sig_Contract.Amount1));
+
+...
+
+end Main;

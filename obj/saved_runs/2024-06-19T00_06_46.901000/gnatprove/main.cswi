@@ -1,0 +1,7 @@
+20240619030634
+-c
+-x
+ada
+-gnatA
+-gnatc
+-gnates=C:\Projects\hashingtest\obj\gnatprove\39facb83.tmp

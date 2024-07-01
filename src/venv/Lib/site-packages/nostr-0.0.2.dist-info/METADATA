@@ -1,0 +1,187 @@
+Metadata-Version: 2.1
+Name: nostr
+Version: 0.0.2
+Summary: A Python library for making Nostr clients
+Author-email: Jeff Thibault <jdthibault2@gmail.com>
+License: MIT License
+        
+        Copyright (c) 2022 Jeff Thibault
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+        
+Project-URL: Homepage, https://github.com/jeffthibault/python-nostr
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: MacOS :: MacOS X
+Requires-Python: >3.6.0
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: cffi (>=1.15.0)
+Requires-Dist: cryptography (>=37.0.4)
+Requires-Dist: pycparser (>=2.21)
+Requires-Dist: secp256k1 (>=0.14.0)
+Requires-Dist: websocket-client (>=1.3.3)
+Provides-Extra: test
+Requires-Dist: pytest (>=7.2.0) ; extra == 'test'
+Requires-Dist: pytest-cov[all] ; extra == 'test'
+
+# python-nostr
+A Python library for making [Nostr](https://github.com/nostr-protocol/nostr) clients
+
+## Usage
+**Generate a key**
+```python
+from nostr.key import PrivateKey
+
+private_key = PrivateKey()
+public_key = private_key.public_key
+print(f"Private key: {private_key.bech32()}")
+print(f"Public key: {public_key.bech32()}")
+```
+**Connect to relays**
+```python
+import json
+import ssl
+import time
+from nostr.relay_manager import RelayManager
+
+relay_manager = RelayManager()
+relay_manager.add_relay("wss://nostr-pub.wellorder.net")
+relay_manager.add_relay("wss://relay.damus.io")
+relay_manager.open_connections({"cert_reqs": ssl.CERT_NONE}) # NOTE: This disables ssl certificate verification
+time.sleep(1.25) # allow the connections to open
+
+while relay_manager.message_pool.has_notices():
+  notice_msg = relay_manager.message_pool.get_notice()
+  print(notice_msg.content)
+  
+relay_manager.close_connections()
+```
+**Publish to relays**
+```python
+import json 
+import ssl
+import time
+from nostr.event import Event
+from nostr.relay_manager import RelayManager
+from nostr.message_type import ClientMessageType
+from nostr.key import PrivateKey
+
+relay_manager = RelayManager()
+relay_manager.add_relay("wss://nostr-pub.wellorder.net")
+relay_manager.add_relay("wss://relay.damus.io")
+relay_manager.open_connections({"cert_reqs": ssl.CERT_NONE}) # NOTE: This disables ssl certificate verification
+time.sleep(1.25) # allow the connections to open
+
+private_key = PrivateKey()
+
+event = Event(private_key.public_key.hex(), "Hello Nostr")
+private_key.sign_event(event)
+
+relay_manager.publish_event(event)
+time.sleep(1) # allow the messages to send
+
+relay_manager.close_connections()
+```
+**Receive events from relays**
+```python
+import json
+import ssl
+import time
+from nostr.filter import Filter, Filters
+from nostr.event import Event, EventKind
+from nostr.relay_manager import RelayManager
+from nostr.message_type import ClientMessageType
+
+filters = Filters([Filter(authors=[<a nostr pubkey in hex>], kinds=[EventKind.TEXT_NOTE])])
+subscription_id = <a string to identify a subscription>
+request = [ClientMessageType.REQUEST, subscription_id]
+request.extend(filters.to_json_array())
+
+relay_manager = RelayManager()
+relay_manager.add_relay("wss://nostr-pub.wellorder.net")
+relay_manager.add_relay("wss://relay.damus.io")
+relay_manager.add_subscription(subscription_id, filters)
+relay_manager.open_connections({"cert_reqs": ssl.CERT_NONE}) # NOTE: This disables ssl certificate verification
+time.sleep(1.25) # allow the connections to open
+
+message = json.dumps(request)
+relay_manager.publish_message(message)
+time.sleep(1) # allow the messages to send
+
+while relay_manager.message_pool.has_events():
+  event_msg = relay_manager.message_pool.get_event()
+  print(event_msg.event.content)
+  
+relay_manager.close_connections()
+```
+
+**NIP-26 delegation**
+```python
+from nostr.delegation import Delegation
+from nostr.event import EventKind, Event
+from nostr.key import PrivateKey
+
+# Load your "identity" PK that you'd like to keep safely offline
+identity_pk = PrivateKey.from_nsec("nsec1...")
+
+# Create a new, disposable PK as the "delegatee" that can be "hot" in a Nostr client
+delegatee_pk = PrivateKey()
+
+# the "identity" PK will authorize "delegatee" to sign TEXT_NOTEs on its behalf for the next month
+delegation = Delegation(
+    delegator_pubkey=identity_pk.public_key.hex(),
+    delegatee_pubkey=delegatee_pk.public_key.hex(),
+    event_kind=EventKind.TEXT_NOTE,
+    duration_secs=30*24*60*60
+)
+
+identity_pk.sign_delegation(delegation)
+
+event = Event(
+    delegatee_pk.public_key.hex(),
+    "Hello, NIP-26!",
+    tags=[delegation.get_tag()],
+)
+delegatee_pk.sign_event(event)
+
+# ...normal broadcast steps...
+```
+
+The resulting delegation tag can be stored as plaintext and reused as-is by the "delegatee" PK until the delegation token expires. There is no way to revoke a signed delegation, so current best practice is to keep the expiration time relatively short.
+
+Hopefully clients will include an optional field to store the delegation tag. That would allow the "delegatee" PK to seamlessly post messages on the "identity" key's behalf, while the "identity" key stays safely offline in cold storage.
+
+
+## Installation
+```bash
+pip install nostr
+```
+
+Note: I wrote this with Python 3.9.5.
+
+## Test Suite
+See the [Test Suite README](test/README.md)
+
+## Disclaimer
+- This library is in very early development.
+- It might have some bugs.
+- I need to add more tests.
+
+Please feel free to add issues, add PRs, or provide any feedback!
